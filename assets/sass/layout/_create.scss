@@ -1,0 +1,337 @@
+// Topbar Right Align - Searh/Dropdown/Help
+.tb-right {
+    @include display-flex;
+    justify-content: flex-end;
+    div {
+        margin-right: 0.6rem;
+    }
+    .input-group {
+        width: 45%;
+        .form-control {
+            height: calc(2.25rem + 0px);
+        }
+    }
+} 
+
+// Modal 
+
+.modal-header {
+    justify-content: center;
+    .modal-title {
+        margin-top: 0px;
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+    .close {
+        position: absolute;
+        right: -30px;
+        color: #e9ecef;
+        top: 6px;
+        font-size: 1.9rem;
+        text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.38);
+        opacity: 1;
+    }
+}
+
+// Dropdown Menu
+.dropdown-menu {
+    background-color: rgba(88,93,100,0.98);
+    border-color: rgba(88,93,100);
+    -weblit-box-shadow: 0 0 13px 0 rgba(109, 118, 126, 0.36);
+    box-shadow: 0 0 13px 0 rgba(109, 118, 126, 0.36);
+    .dropdown-title {
+        padding: 0.25rem;
+        background-color: darken(#6c757d, 3%);
+        color: rgb(204, 204, 204);
+        text-transform: uppercase;
+        i {
+            margin-right: 0.35rem;
+            margin-left: 0.35rem;
+        }
+    }
+    .dropdown-item {
+        background-color: rgba(88,93,100,0.98);
+        padding: 0.25rem 0.5rem;
+        color: #ffffff;
+        @include transition($all);
+        font-size: 0.95rem;
+        &:hover {
+            background: #05abe0;
+            background: -moz-linear-gradient(45deg, #05abe0 0%, $cblue 100%);
+            background: -webkit-linear-gradient(45deg, #05abe0 0%, $cblue 100%);
+            background: linear-gradient(45deg, #05abe0 0%, $cblue 100%);       
+            color: white;
+        }
+    }
+}
+
+// Badge
+.badge {
+    padding: 0.25rem 0.65rem;
+    font-size: 0.85rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px #ccc;
+}
+
+// Headinf
+.sec-heading {
+    @include display-flex;
+    align-items: baseline;
+    margin-bottom: 1rem;
+    h5 {
+        font-weight: 100;
+    }
+    h6 {
+        margin-left: 0.6rem;
+        font-weight: 100;
+        color: #8c8c8c;
+    }
+}
+
+// No Data
+.no-data {
+    position: relative;
+    top: 14rem;
+    width: 50%;
+    margin: 0 auto;
+    padding: 3rem;
+    background-color: #18263a4d;
+    border-radius: 10px;
+    box-shadow: 0px 20px 30px -26px rgba(0, 0, 0, 0.54);
+    img {
+        width: 100px;
+        position: absolute;
+        right: 2.5rem;
+        top: 2rem;
+        box-shadow: 0px 20px 30px -26px rgba(0, 0, 0, 0.54);
+    }
+    h4 {
+        margin-bottom: 1.25rem;
+        padding-left: 10px;
+        color: #18263a;
+    }
+    span {
+        padding: 10px;
+        background-color: #18263a;
+        border-radius: 5px;
+        color: white;
+    }
+}
+
+// Relationship 
+.company-show-layout {
+    padding: 0 20px 20px;
+    @include display-flex;
+    background: white;
+    margin-bottom: 0.5rem;
+    box-shadow: 0px 6px 20px -20px rgba(0, 0, 0, 0.65);
+    &__icon {
+        @include display-flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-preferred-size: 100px;
+        flex-basis: 100px;
+        margin-top: 1.75rem;
+    }
+    &__data {
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        .definition-list {
+            display: -ms-flexbox;
+            display: flex;
+            margin-bottom: 0.25rem;
+            &__group {
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                max-width: 390px;
+                margin-top: 20px;
+            }
+            &__item {
+                @include display-flex;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                align-items: baseline;
+            }
+            
+            &__label, &__value {
+                width: 50%;
+                display: inline-block;
+                line-height: 1rem;
+                font-size: 12px;
+                font-size: 0.825rem;
+                font-weight: 400;
+                text-transform: none;
+                color: #83868a;
+                padding-top: 2px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 2px;
+                border-bottom: 0;
+            }
+            
+            &__label {
+                text-align: right;
+                border-right: 1px solid #e2e6e8;
+            }
+            
+            &__value {
+                text-align: left;
+                overflow: hidden;
+                overflow-wrap: break-word;
+                &--active {
+                    color: #2d3033;
+                }
+                .simple-anchor {
+                    color: #336be7;
+                    -webkit-transition: color 0.15s;
+                    transition: color 0.15s;
+                    &__label {
+                        vertical-align: baseline;
+                    }
+                    &:hover {
+                        color: #141E30;
+                        text-decoration: underline;
+                    }
+                    &::after {
+                        padding-left: 0.2em;
+                        vertical-align: top;
+                        font-size: 0.7em;
+                    }
+                    &--mail-to::after {
+                        content: "\f0e0";
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 400;
+                    }
+                    &--new-tab::after {
+                        content: "\f35d";
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                    }
+                }
+            }
+        }          
+    }
+}
+
+
+
+// Switcher
+.switcher {
+    @include display-flex;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 2px 0;
+    margin-top: 0.5rem;
+    position: relative;
+    margin-right: 2.8rem;
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 45px;
+        height: 23px;
+        left: 17px;
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: -1px;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+          
+            &:before {
+                position: absolute;
+                content: "";
+                height: 15px;
+                width: 15px;
+                left: 5px;
+                bottom: 4px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+        }
+        input {
+            &:checked + .slider {
+                background-color: $cblue;
+            }
+            &:focus + .slider {
+                box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.4);
+            }
+            &:checked + .slider:before {
+                -webkit-transform: translateX(22px);
+                -ms-transform: translateX(22px);
+                transform: translateX(22px);
+            }
+        }
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+            &:before {
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+// Table
+.table {
+    tr {
+        th {
+            font-weight: 500;
+        }
+        td{
+            .h-price {
+                font-weight: 600;
+                color: $cblue;
+                i {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+
+.editable-number__edit-icon {
+    padding: 0 4px;
+    color: #63bf1b;
+  }
+  
+  .editable-number__input {
+    -webkit-transition: none;
+    transition: none;
+  }
+  
+  .editable-number__edit-button {
+    position: absolute;
+    margin: 1px 0 0 -15px;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.15s;
+    transition: opacity 0.15s;
+  }
+  
+  .editable-number:hover .editable-number__edit-button {
+    opacity: 1;
+  }
+  
+  .editable-number--is-editing .editable-number__edit-button, .editable-number--cannot-edit .editable-number__edit-button {
+    display: none;
+  }
+  
+  .editable-number--not-editing .editable-number__input {
+    padding-right: 30px;
+    border: 0;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: right;
+    background: none;
+    cursor: pointer;
+  }

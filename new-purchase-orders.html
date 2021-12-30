@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, shrink-to-fit=no" />
+	    <meta name="author" content="Go Explore India : Dashboard" />
+	    <meta name="description" content="Go Explore India : Dashboard" />
+	    <meta name="copyright" content="Go Explore India : Dashboard" />
+	    <meta name="keywords" content="" />
+	    <meta name="robots" content="Go Explore India : Dashboard || Index" />
+	    <meta name="DC.title" content="Go Explore India : Dashboard" />
+	    <meta name="geo.placename" content="Dev Kumar , USA" />
+	    <meta name="geo.region" content="33067" />
+	    <meta name="geo.placename" content="825, 13th Cross Rd, Hebbal, Bovipalya, Nagapura, Bengaluru, Karnataka 560086 India" />
+	    <meta name="geo.region" content="560086" />
+	    <meta name="geo.placename" content="7110 W Cypresshead Dr Parkland, Florida 33067-2308 United States " />
+        <meta name="geo.region" content="33067" />
+
+
+	    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+	    <title>Dashboard - Al Shamil</title>
+
+        <!--Chartist Chart CSS -->
+        <!-- <link rel="stylesheet" href="../plugins/chartist/css/chartist.min.css"> -->
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet" />
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/icofont.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!-- Begin page -->
+        <div id="wrapper">
+            <!-- Top Bar Start -->
+            <div class="topbar">
+                <!-- LOGO -->
+                <div class="topbar-left">
+                	<a href="index.html" class="logo">
+                		<span>
+                			<img src="assets/images/logo_white.svg" alt="" height="24"/>
+                		</span>
+                		<i>
+                			<img src="assets/images/logo.svg" alt="" height="30" />
+                		</i>
+                	</a>
+                </div>
+
+                <nav class="navbar-custom">
+                    <ul class="navbar-right d-flex list-inline float-right mb-0">
+                        <!-- full screen -->
+                        <li class="dropdown notification-list d-none d-md-block"><a class="nav-link waves-effect" href="#" id="btn-fullscreen"><i class="mdi mdi-fullscreen noti-icon"></i></a></li>
+                        <!-- notification -->
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"><i class="mdi mdi-bell-outline noti-icon"></i> <span class="badge badge-pill badge-danger noti-icon-badge">3</span></a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+                                <h6 class="dropdown-item-text">Notifications (258)</h6>
+                                <div class="slimscroll notification-item-list">
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                        <div class="notify-icon bg-success"><i class="mdi mdi-cart-outline"></i></div>
+                                        <p class="notify-details">Your order is placed<span class="text-muted">Dummy text of the printing and typesetting industry.</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-warning"><i class="mdi mdi-message-text-outline"></i></div>
+                                        <p class="notify-details">New Message received<span class="text-muted">You have 87 unread messages</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-info"><i class="mdi mdi-glass-cocktail"></i></div>
+                                        <p class="notify-details">Your item is shipped<span class="text-muted">It is a long established fact that a reader will</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-primary"><i class="mdi mdi-cart-outline"></i></div>
+                                        <p class="notify-details">Your order is placed<span class="text-muted">Dummy text of the printing and typesetting industry.</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-danger"><i class="mdi mdi-message-text-outline"></i></div>
+                                        <p class="notify-details">New Message received<span class="text-muted">You have 87 unread messages</span></p>
+                                    </a>
+                                </div>
+                                <!-- All--> 
+                                <a href="javascript:void(0);" class="dropdown-item text-center text-primary">View all <i class="fi-arrow-right"></i></a>
+                            </div>
+                        </li>
+                        <!-- logoutg -->
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect" href="login.html"><i class="mdi mdi-power noti-icon"></i></a>
+                        </li>
+                        <!-- profile -->
+                        <li class="dropdown notification-list">
+                            <div class="nav-pro-img">
+                                <a class="nav-link arrow-none waves-effect nav-user" href="#" data-toggle="modal" data-target=".dtUserProfile"><img src="assets/images/users/user-9.jpg" alt="user" class="rounded-circle"></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list-inline menu-left mb-0">
+                        <li class="float-left"><button class="button-menu-mobile open-left waves-effect"><i class="mdi mdi-menu"></i></button></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--  Profile Section -->
+            <div class="modal fade dtUserProfile" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm modal-dialog-centered">
+                    <div class="modal-content" style="background-color: transparent;">
+                        <div class="modal-body p-0">
+                            <div class="wrapperPro">
+								<div class="top-icons">
+									<a href="#" data-dismiss="modal"><i class="fas fa-long-arrow-alt-left"></i></a>
+
+									<a href="login.html"><i class="far mdi mdi-power"></i></a>
+								</div>
+								
+								<div class="profile">
+									<img src="assets/images/users/user-9.jpg" class="thumbnail">
+									<h3 class="name">Beverly Little</h3>
+									<p class="title">HR Manager</p>
+									<!-- <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam aliquid porro!</p> -->
+									<ul class="list-group list-group-flush mb-3">
+	                            		<li class="list-group-item"><i class="ion ion-md-barcode"></i> <span>15487</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-md-phone-portrait"></i> <span>+971 50 587 0654</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-md-at"></i> <span>beverly@gmail.com</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-ios-flag"></i> <span>Indian</span></li>
+	                            	</ul>
+									<a class="btn bg-animate" href="profile.html">Edit Profile</a>
+								</div>
+								
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu">
+                <div class="slimscroll-menu" id="remove-scroll">
+                    <div id="sidebar-menu">
+                        <ul class="metismenu" id="side-menu">
+                            <li><a href="index.html" class="waves-effect"><i class="ti-dashboard"></i><span>Dashboard</span></a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-package"></i> <span>Inventory <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="product.html">Product</a></li>
+                                    <li><a href="variants.html">Variants</a></li>
+                                    <li><a href="batches.html">Batches</a></li>
+                                    <li><a href="price-lists.html">Price List</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="relationships.html" class="waves-effect"><i class="ti-user"></i><span> Relationships</span></a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-layout-accordion-list"></i> <span>Sales Orders <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="orders.html">Orders</a></li>
+                                    <li><a href="invoices.html">Invoices</a></li>
+                                    <li><a href="shipments.html">Shipments</a></li>
+                                    <li><a href="returns.html">Returns</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-shopping-cart"></i> <span>Stock Control <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="purchase-orders.html">Purchase Orders</a></li>
+                                    <li><a href="stock-transfers.html">Stock Transfers</a></li>
+                                    <li><a href="stock-adjustments.html">Stock Adjustments</a></li>
+                                    <li><a href="stocktakes.html">Stocktakes</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-industry"></i> <span>Manufacturing <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Overview</a></li>
+                                    <li><a href="#">Production Orders</a></li>
+                                    <li><a href="#">Bills of Materials</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-shopping-cart-full"></i> <span>B2B eCommerce <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Dashboard</a></li>
+                                    <li><a href="#">Products</a></li>
+                                    <li><a href="#">Customers</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="waves-effect"><i class="ti-credit-card"></i><span> Payments</span></a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-bar-chart-alt"></i> <span>Intelligence <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Reporting </a></li>
+                                    <li><a href="#">Saved Reports</a></li>
+                                    <li><a href="#">Forecasting</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="page-title-box">
+                            <div class="row align-items-center">
+                                <div class="col-sm-6">
+                                    <h4 class="page-title"><a href="purchase-orders.html">Purchase Orders</a> / <small>New Purchase Order</small></h4>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="tb-right">
+                                        <div class="dropdown"><a href="#" class="btn btn-outline-secondary dropdown-toggle arrow-none waves-effect waves-light">Import vai CSV</a></div>
+                                        <div class="dropdown"><a href="purchase-orders.html" class="btn btn-outline-secondary dropdown-toggle arrow-none waves-effect waves-light">Cancel</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card card-order">
+                                    <div class="card-header">
+                                        <div class="row">
+                                            <div class="col-sm-8">
+                                                <div class="d-inline">
+                                                    <select class="form-control custom-select c-select" id="defaultPaymentTerm">
+                                                        <option selected disabled value="">Select Supplier</option>
+                                                        <option>Annanta Source Supplier</option>
+                                                        <option>Henry Supplier</option>
+                                                    </select>
+                                                    
+                                                    <a href="#createNewSupplier" class="btn btn-link create-btn" data-toggle="modal"><span class="text-dark">or</span> create a new supplier</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group row">
+                                                    <label for="orderNum" class="col-sm-4 col-form-label text-right">Order #</label>
+                                                    <div class="col-sm-6 p-0">
+                                                        <input type="text" class="form-control" id="orderNum" value="PO0001">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Create a New Customer -->
+                                        <div class="modal fade" id="createNewSupplier" tabindex="-1" role="dialog" aria-labelledby="createNewCustomerTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header bg-light">
+                                                        <h6 class="modal-title" id="exampleModalLongTitle">Quick Add Supplier</h6>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form action="#">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label for="acFirstName" class="col-form-label text-right">Supplier Name <span class="text-danger">*</span></label>
+                                                                        <input type="text" class="form-control" id="acFirstName" value="" placeholder="Acme Ltd">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6"></div>
+
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label for="email" class="col-form-label text-right">Email</label>
+                                                                        <input type="text" class="form-control" id="email" value="" placeholder="bob@acme.com">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label for="pnum" class="col-form-label text-right">Phone Number</label>
+                                                                        <input type="text" class="form-control" id="pnum" value="" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mt-4">
+                                                                <div class="col-md-6">
+                                                                    <h6>Supplier</h6>
+                                                                    <hr class="my-1" />
+                                                                    <div class="form-group">
+                                                                        <label for="streetAddress" class="col-form-label text-right">Street Address <span class="text-danger">*</span></label>
+                                                                        <input type="text" class="form-control" id="streetAddress" value="" placeholder="e.g. 123 Long Drive Road" />
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label for="streetAddressGTwo" class="col-form-label text-right">Address2</label>
+                                                                        <input type="text" class="form-control" id="streetAddressGTwo" value="" placeholder="Addrss Line 2" />
+                                                                    </div>
+                                                                    <div class="row m-0">
+                                                                        <div class="col-6 pl-0">
+                                                                            <div class="form-group">
+                                                                                <label for="suburb" class="col-form-label text-right">Suburb</label>
+                                                                                <input type="text" class="form-control" id="suburb" value="" placeholder="Suburb" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-6 pr-0">
+                                                                            <div class="form-group">
+                                                                                <label for="city" class="col-form-label text-right">City</label>
+                                                                                <input type="text" class="form-control" id="city" value="" placeholder="City" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row m-0">
+                                                                        <div class="col-6 pl-0">
+                                                                            <div class="form-group">
+                                                                                <label for="state" class="col-form-label text-right">State</label>
+                                                                                <input type="text" class="form-control" id="state" value="" placeholder="State" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-6 pr-0">
+                                                                            <div class="form-group">
+                                                                                <label for="zipcode" class="col-form-label text-right">ZIP Code</label>
+                                                                                <input type="text" class="form-control" id="zipcode" value="" placeholder="30069" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label for="country" class="col-form-label text-right">Country</label>
+                                                                        <select class="form-control custom-select" id="country">
+                                                                            <option selected disabled value="">Select a country</option>
+                                                                            <option>USA</option>
+                                                                            <option>UAE</option>
+                                                                            <option>India</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6">
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer p-0 bg-light">
+                                                        <a href="#" class="btn rounded-0">Cancel</a>
+                                                        <a href="#" class="btn btn-primary rounded-0">Save</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group row">
+                                                    <label for="currency" class="col-sm-4 col-form-label text-right">Supplier <span class="text-danger">*</span></label>
+                                                    <div class="col-sm-7">
+                                                        <select class="form-control custom-select" id="currency">
+                                                            <option disabled>Select a supplier address</option>
+                                                            <option selected>Indian Rupee (INR)</option>
+                                                            <option>USA</option>
+                                                            <option>UAE</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="currency" class="col-sm-4 col-form-label text-right">Bill to <span class="text-danger">*</span></label>
+                                                    <div class="col-sm-7">
+                                                        <select class="form-control custom-select" id="currency">
+                                                            <option disabled>Select an address</option>
+                                                            <option selected>Primary Locatin</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="currency" class="col-sm-4 col-form-label text-right">Ship to <span class="text-danger">*</span></label>
+                                                    <div class="col-sm-7">
+                                                        <select class="form-control custom-select" id="currency">
+                                                            <option disabled>Select an address</option>
+                                                            <option selected>Primary Locatin</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group row">
+                                                    <label for="issueDate" class="col-sm-4 col-form-label text-right">Issue Date <span class="text-danger">*</span></label>
+                                                    <div class="col-sm-7">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" id="issueDate" placeholder="DD/MM/YYYY" />
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text" id="issueDate"><i style="font-size:14px" class="fa">&#xf073;</i></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="stockDate" class="col-sm-4 col-form-label text-right">Stock Date <span class="text-danger">*</span></label>
+                                                    <div class="col-sm-7">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" id="stockDate" placeholder="DD/MM/YYYY" />
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text" id="stockDate"><i style="font-size:14px" class="fa">&#xf073;</i></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="shipingDate" class="col-sm-4 col-form-label text-right">Payment Due</label>
+                                                    <div class="col-sm-7">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" id="shipingDate" placeholder="DD/MM/YYYY" />
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text" id="shipingDate"><i style="font-size:14px" class="fa">&#xf073;</i></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="reference" class="col-sm-4 col-form-label text-right">Reference</label>
+                                                    <div class="col-sm-7">
+                                                        <input type="text" class="form-control" id="reference" placeholder="" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="email" class="col-sm-4 col-form-label text-right">Email</label>
+                                                    <div class="col-sm-7">
+                                                        <input type="text" class="form-control" id="email" value="" placeholder="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group row">
+                                                    <label for="currency" class="col-sm-4 col-form-label text-right">Currency</label>
+                                                    <div class="col-sm-7">
+                                                        <select class="form-control custom-select" id="currency">
+                                                            <option disabled value="">Select a currency</option>
+                                                            <option selected>Indian Rupee (INR)</option>
+                                                            <option>USA</option>
+                                                            <option>UAE</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="priceList" class="col-sm-4 col-form-label text-right">Price List</label>
+                                                    <div class="col-sm-7">
+                                                        <select class="form-control custom-select" id="priceList">
+                                                            <option disabled value="">-- Clear Selection --</option>
+                                                            <option selected>Buy</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="totalsAre" class="col-sm-4 col-form-label text-right">Totals Are</label>
+                                                    <div class="col-sm-7">
+                                                        <select class="form-control custom-select" id="totalsAre">
+                                                            <option disabled value="">-- Choose --</option>
+                                                            <option >Tax Exclusive</option>
+                                                            <option>Tax Inclusive</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover table-white mb-0">
+                                                        <thead class="thead-light">
+                                                            <tr>
+                                                                <th width="40px"></th>
+                                                                <th style="width: 40%;">Item Name</th>
+                                                                <th>Quantity</th>
+                                                                <th>After</th>
+                                                                <th>Cost per unit</th>
+                                                                <th>TAX</th>
+                                                                <th style="width: 10%;">Total (₹)</th>
+                                                                <th> </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <img src="assets/images/hc/hc1.png" alt="" class="thumb-md">
+                                                                </td>
+                                                                <td>
+                                                                    <div class="selitem">
+                                                                        <div class="selitem__info">
+                                                                            <h6>Item Name <small>Light Gray / Medium</small></h6>
+                                                                            <p>Catagory - IN001-LG-M - Light Gray / Medium</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <input class="form-control" type="text" value="12">
+                                                                </td>
+                                                                <td>44</td>
+                                                                <td>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control" id="issueDate" placeholder="" value="600" />
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control" id="issueDate" placeholder="" value="12.5" />
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">₹705.60</td>
+                                                                <td><a href="javascript:void(0)" class="text-danger font-18" title="Remove"><i class="icofont-close-line-squared-alt"></i></a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <img src="assets/images/hc/hc2.png" alt="" class="thumb-md">
+                                                                </td>
+                                                                <td>
+                                                                    <div class="selitem">
+                                                                        <div class="selitem__info">
+                                                                            <h6>Item Name <small>Light Gray / Medium</small></h6>
+                                                                            <p>Catagory - IN001-LG-M - Light Gray / Medium</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <input class="form-control" type="text" value="12">
+                                                                </td>
+                                                                <td>44</td>
+                                                                <td>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control" id="issueDate" placeholder="" value="600" />
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control" id="issueDate" placeholder="" value="12.5" />
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-right">₹705.60</td>
+                                                                <td><a href="javascript:void(0)" class="text-danger font-18" title="Remove"><i class="icofont-close-line-squared-alt"></i></a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    
+                                                                </td>
+                                                                <td>
+                                                                    <input class="form-control" type="text" value="" placeholder="Start tryping SKU or name..." >
+                                                                </td>
+                                                                <td>
+                                                                    <input class="form-control" type="number" value="1">
+                                                                </td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <div class="input-group">
+                                                                        <input type="number" class="form-control" id="cost" required placeholder="Cost" value="" />
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <input class="form-control" type="number" value="12.5">
+                                                                </td>
+                                                                <td class="text-right">₹0.60</td>
+                                                                <td><a href="javascript:void(0)" class="text-danger font-18" title="Remove"><i class="icofont-close-line-squared-alt"></i></a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th colspan="8" class="p-1">
+                                                                    <a href="#" class="btn btn-link waves-effect text-center waves-light"><i class="fas fa-plus"></i> <b>Add another item</b></a>
+                                                                </th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    
+                                                    <table class="table table-hover mt-0 landed-cost">
+                                                        <thead class="thead-light">
+                                                            <tr>
+                                                                <th width="40px"></th>
+                                                                <th style="width: 58.5%;">Landed Cost</th>
+                                                                <th>Costs (₹)</th>
+                                                                <th>TAX</th>
+                                                                <th style="width: 10%;">Total (₹)</th>
+                                                                <th></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td>
+                                                                    <input class="form-control" type="text" placeholder="Landed Cost">
+                                                                </td><td>
+                                                                    <div class="input-group">
+                                                                        <input type="number" class="form-control" id="cost" required placeholder="Cost" value="" />
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <input class="form-control" type="number" value="12.5">
+                                                                </td>
+                                                                <td class="text-right">₹0.60</td>
+                                                                <td><a href="javascript:void(0)" class="text-danger font-18 landed-cost-remove" title="Remove"><i class="icofont-close-line-squared-alt"></i></a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th colspan="8" class="p-1">
+                                                                    <a href="#" class="btn btn-link waves-effect text-center waves-light"><i class="fas fa-plus"></i> <b>Add another item</b></a>
+                                                                </th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <a href="#" id="landedCost" class="btn btn-cust waves-effect waves-light">Add Landed Costs</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-4">
+                                            <div class="col-md-7">
+                                                <textarea class="form-control mt-3" id="description" rows="5" spellcheck="true" placeholder="Message to Customer"></textarea>
+                                            </div>
+                                            <div class="col-sm-4 offset-md-1">
+                                                <div class="m-b-20">
+                                                    <div class="table-responsive">
+                                                        <table class="table mb-0 totaltable">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th>Total Units</th>
+                                                                    <th class="text-right">12</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>Subtotal</th>
+                                                                    <th class="text-right">₹705.60</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>Plus VAT (12.5%)</th>
+                                                                    <th class="text-right">₹88.20</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>Total</th>
+                                                                    <th class="text-right text-primary"><h6>₹793.80</h6></th>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group row">
+                                                    <label for="tag" class="col-sm-3 col-form-label text-right">Tag</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="tag" placeholder="e.g. Partners">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="purchase-orders.html" class="btn rounded-0">Cancel</a>
+                                        <a href="#" class="btn btn-lg btn-secondary rounded-0">Save as draft</a>
+                                        <a href="#" class="btn btn-lg btn-primary rounded-0">Save</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- container-fluid -->
+                </div>
+                <!-- content -->
+                <footer class="footer">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Al Shamil Computer.</footer>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- END wrapper -->
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/waves.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>

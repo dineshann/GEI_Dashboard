@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, shrink-to-fit=no" />
+	    <meta name="author" content="Go Explore India : Dashboard" />
+	    <meta name="description" content="Go Explore India : Dashboard" />
+	    <meta name="copyright" content="Go Explore India : Dashboard" />
+	    <meta name="keywords" content="" />
+	    <meta name="robots" content="Go Explore India : Dashboard || Index" />
+	    <meta name="DC.title" content="Go Explore India : Dashboard" />
+	    <meta name="geo.placename" content="Dev Kumar , USA" />
+	    <meta name="geo.region" content="33067" />
+	    <meta name="geo.placename" content="825, 13th Cross Rd, Hebbal, Bovipalya, Nagapura, Bengaluru, Karnataka 560086 India" />
+	    <meta name="geo.region" content="560086" />
+	    <meta name="geo.placename" content="7110 W Cypresshead Dr Parkland, Florida 33067-2308 United States " />
+        <meta name="geo.region" content="33067" />
+
+
+	    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" /> 
+	    <title>Dashboard | Go Explore India</title>
+
+        <!--Chartist Chart CSS -->
+        <!-- <link rel="stylesheet" href="../plugins/chartist/css/chartist.min.css"> -->
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet" />
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icofont.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <!-- Begin page -->
+        <div id="wrapper">
+            <!-- Top Bar Start -->
+            <div class="topbar">
+                <!-- LOGO -->
+                <div class="topbar-left">
+                	<a href="index.html" class="logo">
+                		<span>
+                			<img src="assets/images/logo_white.svg" alt="" height="24"/>
+                		</span>
+                		<i>
+                			<img src="assets/images/logo.svg" alt="" height="50" />
+                		</i>
+                	</a>
+                </div>
+
+                <nav class="navbar-custom">
+                    <ul class="navbar-right d-flex list-inline float-right mb-0">
+                        <!-- full screen -->
+                        <li class="dropdown notification-list d-none d-md-block"><a class="nav-link waves-effect" href="#" id="btn-fullscreen"><i class="mdi mdi-fullscreen noti-icon"></i></a></li>
+                        <!-- notification -->
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"><i class="mdi mdi-bell-outline noti-icon"></i> <span class="badge badge-pill badge-danger noti-icon-badge">3</span></a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+                                <h6 class="dropdown-item-text">Notifications (258)</h6>
+                                <div class="slimscroll notification-item-list">
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                        <div class="notify-icon bg-success"><i class="mdi mdi-cart-outline"></i></div>
+                                        <p class="notify-details">Your order is placed<span class="text-muted">Dummy text of the printing and typesetting industry.</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-warning"><i class="mdi mdi-message-text-outline"></i></div>
+                                        <p class="notify-details">New Message received<span class="text-muted">You have 87 unread messages</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-info"><i class="mdi mdi-glass-cocktail"></i></div>
+                                        <p class="notify-details">Your item is shipped<span class="text-muted">It is a long established fact that a reader will</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-primary"><i class="mdi mdi-cart-outline"></i></div>
+                                        <p class="notify-details">Your order is placed<span class="text-muted">Dummy text of the printing and typesetting industry.</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-danger"><i class="mdi mdi-message-text-outline"></i></div>
+                                        <p class="notify-details">New Message received<span class="text-muted">You have 87 unread messages</span></p>
+                                    </a>
+                                </div>
+                                <!-- All--> 
+                                <a href="javascript:void(0);" class="dropdown-item text-center text-primary">View all <i class="fi-arrow-right"></i></a>
+                            </div>
+                        </li>
+                        <!-- logoutg -->
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect" href="login.html"><i class="mdi mdi-power noti-icon"></i></a>
+                        </li>
+                        <!-- profile -->
+                        <li class="dropdown notification-list">
+                            <div class="nav-pro-img">
+                                <a class="nav-link arrow-none waves-effect nav-user" href="#" data-toggle="modal" data-target=".dtUserProfile"><img src="assets/images/users/user-9.jpg" alt="user" class="rounded-circle"></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list-inline menu-left mb-0">
+                        <li class="float-left"><button class="button-menu-mobile open-left waves-effect"><i class="mdi mdi-menu"></i></button></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--  Profile Section -->
+            <div class="modal fade dtUserProfile" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content" style="background-color: transparent;">
+                        <div class="modal-body p-0">
+                            <div class="wrapperPro">
+								<div class="top-icons">
+									<a href="#" data-dismiss="modal"><i class="fas fa-long-arrow-alt-left"></i></a>
+
+									<a href="login.html"><i class="far mdi mdi-power"></i></a>
+								</div>
+								
+								<div class="profile">
+									<img src="assets/images/users/user-9.jpg" class="thumbnail">
+									<h3 class="name">Beverly Little</h3>
+									<p class="title">Admin</p>
+									<!-- <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam aliquid porro!</p> -->
+									<ul class="list-group list-group-flush mb-3">
+	                            		<li class="list-group-item"><i class="ion ion-md-barcode"></i> <span>15487</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-md-alarm"></i> <span>09:28 AM</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-md-keypad"></i> <span>107</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-md-phone-portrait"></i> <span>+971 50 587 0654</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-md-at"></i> <span>beverly@gmail.com</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-ios-flag"></i> <span>Indian</span></li>
+	                            	</ul>
+									<a class="btn bg-animate" href="profile.html">Edit Profile</a>
+								</div>
+								
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu">
+                <div class="slimscroll-menu" id="remove-scroll">
+                    <div id="sidebar-menu">
+                        <ul class="metismenu" id="side-menu">
+                            <li><a href="index.html" class="waves-effect"><i class="ti-dashboard"></i><span>Dashboard</span></a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-package"></i> <span>Inventory <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="product.html">Product</a></li>
+                                    <li><a href="variants.html">Variants</a></li>
+                                    <li><a href="batches.html">Batches</a></li>
+                                    <li><a href="price-lists.html">Price List</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="relationships.html" class="waves-effect"><i class="ti-user"></i><span> Relationships</span></a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-layout-accordion-list"></i> <span>Sales Orders <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Orders</a></li>
+                                    <li><a href="#">Invoices</a></li>
+                                    <li><a href="#">Shipments</a></li>
+                                    <li><a href="#">Returns</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-shopping-cart"></i> <span>Stock Control <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Purchase Orders</a></li>
+                                    <li><a href="#">Stock Transfers</a></li>
+                                    <li><a href="#">Stock Adjustments</a></li>
+                                    <li><a href="#">Stocktakes</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-industry"></i> <span>Manufacturing <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Overview</a></li>
+                                    <li><a href="#">Production Orders</a></li>
+                                    <li><a href="#">Bills of Materials</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-shopping-cart-full"></i> <span>B2B eCommerce <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Dashboard</a></li>
+                                    <li><a href="#">Products</a></li>
+                                    <li><a href="#">Customers</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="waves-effect"><i class="ti-credit-card"></i><span> Payments</span></a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-bar-chart-alt"></i> <span>Intelligence <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Reporting </a></li>
+                                    <li><a href="#">Saved Reports</a></li>
+                                    <li><a href="#">Forecasting</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="page-title-box">
+                            <div class="row align-items-center">
+                                <div class="col-sm-6">
+                                    <h4 class="page-title"><a href="relationships.html">Relationships</a> / <small>Henry Salt</small></h4>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="tb-right">
+                                        <div class="d-flex">
+                                            <div class="dropdown"><a href="#" class="btn btn-primary btn-cust dropdown-toggle arrow-none waves-effect waves-light">New Sales Order</a></div>
+                                            <div class="dropdown"><a href="edit-business.html" class="btn btn-primary btn-cust dropdown-toggle arrow-none waves-effect waves-light">Edit</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                        <!-- Company Basic Details -->
+                        <section class="company-show-layout">
+                            <div class="company-show-layout__icon">
+                                <img src="assets/images/icons/business.svg" width="100" height="100" alt="">
+                            </div>
+                            <div class="company-show-layout__data">
+                                <dl class="definition-list" aria-label="relationship details">
+                                    <p class=""></p>
+                                    <div class="definition-list__group">
+                                        <div class="definition-list__item">
+                                            <dt class="definition-list__label">
+                                                Type
+                                            </dt>
+                                            <dd class="definition-list__value definition-list__value--active">
+                                                Business Customer
+                                            </dd>
+                                        </div>
+
+                                        <div class="definition-list__item">
+                                            <dt class="definition-list__label">
+                                                Code
+                                            </dt>
+                                            <dd class="definition-list__value definition-list__value--active">
+                                                ANN23293
+                                            </dd>
+                                        </div>
+
+                                        <div class="definition-list__item">
+                                            <dt class="definition-list__label">
+                                                Tax Number
+                                            </dt>
+                                            <dd class="definition-list__value definition-list__value--active">
+                                                GSTN1234567890
+                                            </dd>
+                                        </div>
+                                    </div>
+
+                                    <div class="definition-list__group">
+                                        <div class="definition-list__item">
+                                            <dt class="definition-list__label">
+                                                Phone
+                                            </dt>
+                                            <dd class="definition-list__value definition-list__value--active">
+                                                +1 650-468-2904
+                                            </dd>
+                                        </div>
+                                        <div class="definition-list__item">
+                                            <dt class="definition-list__label">
+                                                Email
+                                            </dt>
+                                            <dd class="definition-list__value definition-list__value--active">
+                                                <a rel="noopener noreferrer" href="mailto:info@annantasource.com" target="" class="simple-anchor simple-anchor--mail-to" title="">
+                                                    <span class="simple-anchor__label">info@annantasource.com</span>
+                                                </a>
+                                            </dd>
+                                        </div>
+                                        <div class="definition-list__item">
+                                            <dt class="definition-list__label">
+                                                Website
+                                            </dt>
+                                            <dd class="definition-list__value definition-list__value--active">
+                                                <a rel="noopener noreferrer" href="https://www.annantasource.com/" target="_blank" class="simple-anchor simple-anchor--new-tab" title="">
+                                                    <span class="simple-anchor__label">www.annantasource.com</span>
+                                                </a>
+                                            </dd>
+                                        </div>
+                                        <div class="definition-list__item">
+                                            <dt class="definition-list__label">
+                                                Description
+                                            </dt>
+                                            <dd class="definition-list__value definition-list__value--active">
+                                                Inventory &amp; Order Management For Smart Brands
+                                            </dd>
+                                        </div>
+                                    </div>
+                                    <div class="definition-list__group">
+                                        <div class="definition-list__item">
+                                            <dt class="definition-list__label">
+                                                Assigned To
+                                            </dt>
+                                            <dd class="definition-list__value definition-list__value--active">
+                                                <span class="text-gray">None assigned</span>
+                                            </dd>
+                                        </div>
+                                        <div class="definition-list__item">
+                                            <dt class="definition-list__label">
+                                                Default Price List
+                                            </dt>
+                                            <dd class="definition-list__value definition-list__value--active">
+                                                <span class="text-gray">None set</span>
+                                            </dd>
+                                        </div>
+                                        <div class="definition-list__item">
+                                            <dt class="definition-list__label">
+                                                Default Discount Rate
+                                            </dt>
+                                            <dd class="definition-list__value definition-list__value--active">
+                                                <span class="text-gray">None set</span>
+                                            </dd>
+                                        </div>
+                                        <div class="definition-list__item">
+                                            <dt class="definition-list__label">
+                                                Default Payment Term
+                                            </dt>
+                                            <dd class="definition-list__value definition-list__value--active">
+                                                <span class="text-gray">None set</span>
+                                            </dd>
+                                        </div>
+                                        <div class="definition-list__item">
+                                            <dt class="definition-list__label">
+                                                Default Tax Type
+                                            </dt>
+                                            <dd class="definition-list__value definition-list__value--active">
+                                                <span class="text-gray">
+                                                    Sales Tax
+                                                    (Account: 12.5%)
+                                                </span>
+                                            </dd>
+                                        </div>
+                                        <div class="definition-list__item">
+                                            <dt class="definition-list__label">
+                                                Default Sales Account
+                                            </dt>
+                                            <dd class="definition-list__value definition-list__value--active">
+                                                <span class="text-gray">None set</span>
+                                            </dd>
+                                        </div>
+                                        <div class="definition-list__item">
+                                            <dt class="definition-list__label">
+                                                Default Stock Location
+                                            </dt>
+                                            <dd class="definition-list__value definition-list__value--active">
+                                                <span class="text-gray">None set</span>
+                                            </dd>
+                                        </div>
+                                        <div class="definition-list__item">
+                                            <dt class="definition-list__label">
+                                                Default Payment Method
+                                            </dt>
+                                            <dd class="definition-list__value definition-list__value--active">
+                                                <span class="text-gray">None set</span>
+                                            </dd>
+                                        </div>
+                                    </div>
+                                </dl>
+                            </div>
+                        </section>
+
+                        <!-- Info Data Table -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="nav nav-tabs nav-tabs-custom" role="tablist">
+                                    <li class="nav-item waves-effect waves-light">
+                                        <a class="nav-link show active" data-toggle="tab" href="#rel-contact" role="tab" aria-selected="true">
+                                            <span class="d-none d-sm-block">Contacts</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item waves-effect waves-light">
+                                        <a class="nav-link show" data-toggle="tab" href="#rel-address" role="tab" aria-selected="false">
+                                            <span class="d-none d-sm-block">Addresses</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item waves-effect waves-light">
+                                        <a class="nav-link show" data-toggle="tab" href="#rel-notes" role="tab" aria-selected="false">
+                                            <span class="d-none d-sm-block">Notes</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item waves-effect waves-light">
+                                        <a class="nav-link show" data-toggle="tab" href="#rel-orders" role="tab" aria-selected="false">
+                                            <span class="d-none d-sm-block">Orders</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item waves-effect waves-light">
+                                        <a class="nav-link show" data-toggle="tab" href="#rel-insights" role="tab" aria-selected="false">
+                                            <span class="d-none d-sm-block">Insights</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content custab-content">
+                                    <div class="tab-pane show active" id="rel-contact" role="tabpanel">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover">
+                                                <thead class="thead-light">
+                                                    <tr>
+                                                        <th scope="col" width=40></th>
+                                                        <th scope="col">Name</th>
+                                                        <th scope="col">Phone</th>
+                                                        <th scope="col">Fax</th>
+                                                        <th scope="col">Email</th>
+                                                        <th scope="col">Title</th>
+                                                        <th scope="col">Department</th>
+                                                        <th scope="col">B2B ECommerce</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" id="customcheckboxInline02" name="customcheckboxInline02" class="custom-control-input" data-parsley-multiple="customRadioInline1"> 
+                                                                <label class="custom-control-label" for="customcheckboxInline02"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>Arthur Slugworth</td>
+                                                        <td>+199899899898</td>
+                                                        <td></td>
+                                                        <td>info@annantasource.com</td>
+                                                        <td>industrial</td>
+                                                        <td>Warehouse</td>
+                                                        <td>Unauthorized</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" id="customcheckboxInline02" name="customcheckboxInline02" class="custom-control-input" data-parsley-multiple="customRadioInline1"> 
+                                                                <label class="custom-control-label" for="customcheckboxInline02"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>Charlie Bucket</td>
+                                                        <td>+1744-287-1299</td>
+                                                        <td></td>
+                                                        <td>charlie@annantasource.com</td>
+                                                        <td>Lead Designer</td>
+                                                        <td>Head Office</td>
+                                                        <td>Unauthorized</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot class="thead-light">
+                                                    <tr>
+                                                        <th colspan="8" class="p-0">
+                                                            <a href="#addContact" class="btn btn-block text-primary waves-effect waves-light" data-toggle="modal" data-target="#"><i class="icofont-ui-add"></i> <b>Add a Contact</b></a>
+                                                        </th>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                        <!-- Add Contact Modal -->
+                                        <div class="modal fade" id="addContact" tabindex="-1" role="dialog" aria-labelledby="addContactTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header bg-light">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">New Contact</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form action="#">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group row">
+                                                                        <label for="acFirstName" class="col-sm-4 col-form-label text-right">First Name <span>*</span></label>
+                                                                        <div class="col-sm-7">
+                                                                            <input type="text" class="form-control" id="acFirstName" value="" placeholder="First Name">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="acLastName" class="col-sm-4 col-form-label text-right">Last Name</label>
+                                                                        <div class="col-sm-7">
+                                                                            <input type="text" class="form-control" id="acLastName" placeholder="Last Name">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="acEmail" class="col-sm-4 col-form-label text-right">Email</label>
+                                                                        <div class="col-sm-7">
+                                                                            <input type="text" class="form-control" id="acEmail" placeholder="Email">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="acPhoneNumber" class="col-sm-4 col-form-label text-right">Phone</label>
+                                                                        <div class="col-sm-7">
+                                                                            <input type="text" class="form-control" id="acPhoneNumber" value="" placeholder="Phone Number">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="acFax" class="col-sm-4 col-form-label text-right">Fax</label>
+                                                                        <div class="col-sm-7">
+                                                                            <input type="text" class="form-control" id="acFax" value="" placeholder="Fax Number">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="acMobileNumber" class="col-sm-4 col-form-label text-right">Mobile</label>
+                                                                        <div class="col-sm-7">
+                                                                            <input type="text" class="form-control" id="acMobileNumber" value="" placeholder="Mobile Number">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group row">
+                                                                        <label for="acTitle" class="col-sm-4 col-form-label text-right">Title</label>
+                                                                        <div class="col-sm-7">
+                                                                            <input type="text" class="form-control" id="acTitle" value="" placeholder="e.g. Owner, Stock Buyer" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="acDepartment" class="col-sm-4 col-form-label text-right">Department</label>
+                                                                        <div class="col-sm-7">
+                                                                            <input type="text" class="form-control" id="acDepartment" value="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="acNote" class="col-sm-4 col-form-label text-right">Note</label>
+                                                                        <div class="col-sm-7">
+                                                                            <textarea class="form-control" id="acNote" rows="4"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer p-0 bg-light">
+                                                        <button type="button" class="btn m-0 rounded-0" data-dismiss="modal">Cancel</button>
+                                                        <button type="button" class="btn btn-primary m-0 rounded-0">Add Contact</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane show" id="rel-address" role="tabpanel">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover">
+                                                <thead class="thead-light">
+                                                    <tr>
+                                                        <th scope="col">Label</th>
+                                                        <th scope="col">Street Address</th>
+                                                        <th scope="col">Suburb</th>
+                                                        <th scope="col">City</th>
+                                                        <th scope="col">State</th>
+                                                        <th scope="col">Country</th>
+                                                        <th scope="col">ZIP Code</th>
+                                                        <th scope="col">Phone</th>
+                                                        <th scope="col">Email</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Office</td>
+                                                        <td>483 Sawayn View, 119 Dewayne Green</td>
+                                                        <td></td>
+                                                        <td>East Elisabeth</td>
+                                                        <td></td>
+                                                        <td>UK</td>
+                                                        <td>9089</td>
+                                                        <td>+1 900 009 9089</td>
+                                                        <td>henry@annantasource.com</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Home</td>
+                                                        <td>483 Sawayn View, 119 Dewayne Green</td>
+                                                        <td></td>
+                                                        <td>East Elisabeth</td>
+                                                        <td></td>
+                                                        <td>UK</td>
+                                                        <td>9089</td>
+                                                        <td>+1 900 009 9089</td>
+                                                        <td>henry@annantasource.com</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot class="thead-light">
+                                                    <tr>
+                                                        <th colspan="9" class="p-0">
+                                                            <a href="#addAddress" class="btn btn-block text-primary waves-effect waves-light" data-toggle="modal" data-target="#"><i class="icofont-ui-add"></i> <b>Add new Address</b></a>
+                                                        </th>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                        <!-- Add Address Modal -->
+                                        <div class="modal fade" id="addAddress" tabindex="-1" role="dialog" aria-labelledby="addAddressTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header bg-light">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">New Address</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form action="#">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group row">
+                                                                        <label for="aaLabel" class="col-sm-4 col-form-label text-right">Label <span>*</span></label>
+                                                                        <div class="col-sm-7">
+                                                                            <input type="text" class="form-control" id="aaLabel" value="" placeholder="e.g. SHipping, Billing Address">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="aaFirstName" class="col-sm-4 col-form-label text-right">First Name</label>
+                                                                        <div class="col-sm-7">
+                                                                            <input type="text" class="form-control" id="aaFirstName" value="" placeholder="First Name">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="aaLastName" class="col-sm-4 col-form-label text-right">Last Name</label>
+                                                                        <div class="col-sm-7">
+                                                                            <input type="text" class="form-control" id="aaLastName" placeholder="Last Name">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="aaCompanyName" class="col-sm-4 col-form-label text-right">Company Name</label>
+                                                                        <div class="col-sm-7">
+                                                                            <input type="text" class="form-control" id="aaCompanyName" value="Annanta Source LLC" placeholder="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="aaEmail" class="col-sm-4 col-form-label text-right">Email</label>
+                                                                        <div class="col-sm-7">
+                                                                            <input type="text" class="form-control" id="aaEmail" placeholder="hello@acmail.com">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="aaPhoneNumber" class="col-sm-4 col-form-label text-right">Phone</label>
+                                                                        <div class="col-sm-7">
+                                                                            <input type="text" class="form-control" id="aaPhoneNumber" value="" placeholder="01 234 567 8900">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group row">
+                                                                        <label for="aaAddLaneOne" class="col-sm-4 col-form-label text-right">Address Lane 1</label>
+                                                                        <div class="col-sm-7">
+                                                                            <input type="text" class="form-control" id="aaAddLaneOne" value="" placeholder="Appartment ABC" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="aaAddLaneTwo" class="col-sm-4 col-form-label text-right">Address Lane 2</label>
+                                                                        <div class="col-sm-7">
+                                                                            <input type="text" class="form-control" id="aaAddLaneTwo" value="" placeholder="123 Very Long Drive">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="aaSuburb" class="col-sm-4 col-form-label text-right">Suburb</label>
+                                                                        <div class="col-sm-7">
+                                                                            <input type="text" class="form-control" id="aaSuburb" value="" placeholder="Suburb">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="aaCity" class="col-sm-4 col-form-label text-right">City</label>
+                                                                        <div class="col-sm-7">
+                                                                            <input type="text" class="form-control" id="aaCity" value="" placeholder="01 234 567 8900">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="aaState" class="col-sm-4 col-form-label text-right">State</label>
+                                                                        <div class="col-sm-7">
+                                                                            <input type="text" class="form-control" id="aaState" value="" placeholder="01 234 567 8900">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="aaCountry" class="col-sm-4 col-form-label text-right">Country</label>
+                                                                        <div class="col-sm-7">
+                                                                            <select class="form-control custom-select" id="aaCountry">
+                                                                                <option selected disabled value="">Select a country</option>
+                                                                                <option>USA</option>
+                                                                                <option>UAE</option>
+                                                                                <option>India</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="aaPhoneNumber" class="col-sm-4 col-form-label text-right">ZIP Code</label>
+                                                                        <div class="col-sm-7">
+                                                                            <input type="text" class="form-control" id="aaPhoneNumber" value="" placeholder="123456">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer p-0 bg-light">
+                                                        <button type="button" class="btn m-0 rounded-0" data-dismiss="modal">Cancel</button>
+                                                        <button type="button" class="btn btn-primary m-0 rounded-0">Add Address</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane show" id="rel-notes" role="tabpanel">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover">
+                                                <thead class="thead-light">
+                                                    <tr>
+                                                        <th scope="col">Note</th>
+                                                        <th scope="col">Added by</th>
+                                                        <th scope="col">Added on</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Note that supplier mentioned here</td>
+                                                        <td>Dinesh</td>
+                                                        <td>05 May 2020</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot class="thead-light">
+                                                    <tr>
+                                                        <th colspan="9" class="p-0">
+                                                            <a href="#addNote" class="btn btn-block text-primary waves-effect waves-light" data-toggle="modal" data-target="#"><i class="icofont-ui-add"></i> <b>Add a note</b></a>
+                                                        </th>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                        <!-- Add Note Modal -->
+                                        <div class="modal fade" id="addNote" tabindex="-1" role="dialog" aria-labelledby="addNoteTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header bg-light">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">New Note</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form action="#">
+                                                            <div class="row">
+                                                                <div class="col-md-10 mx-auto">
+                                                                    <div class="form-group row">
+                                                                        <label for="acNote" class="col-sm-2 col-form-label text-right">Note</label>
+                                                                        <div class="col-sm-9">
+                                                                            <textarea class="form-control" id="acNote" rows="2"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer p-0 bg-light">
+                                                        <button type="button" class="btn m-0 rounded-0" data-dismiss="modal">Cancel</button>
+                                                        <button type="button" class="btn btn-primary m-0 rounded-0">Add Note</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+
+                                    <div class="tab-pane show" id="rel-orders" role="tabpanel">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover">
+                                                <thead class="thead-light">
+                                                    <tr>
+                                                        <th width="40"></th>
+                                                        <th scope="col">Order #</th>
+                                                        <th scope="col">Status</th>
+                                                        <th scope="col">Paid</th>
+                                                        <th scope="col">Fulfilled</th>
+                                                        <th scope="col">Location</th>
+                                                        <th scope="col">Total Value</th>
+                                                        <th scope="col">Created</th>
+                                                        <th scope="col">Last Updated</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div><a href="rel_supplier_detail.html"><img src="assets/images/icons/file.svg" height="40" alt="" class="thumb-sm"></a></div>
+                                                        </td>
+                                                        <td>ANN2020</td>
+                                                        <td><span class="badge badge-info">Finalized</span></td>
+                                                        <td>
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" id="customradioInline01" name="customradioInline01" class="custom-control-input" data-parsley-multiple="customRadioInline1"> 
+                                                                <label class="custom-control-label" for="customradioInline01"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" id="customradioInline02" name="customradioInline02" class="custom-control-input" data-parsley-multiple="customRadioInline2"> 
+                                                                <label class="custom-control-label" for="customradioInline02"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>Primary Location</td>
+                                                        <td><i class="icofont-rupee"></i> 1,430.00</td>
+                                                        <td>May 1 2020</td>
+                                                        <td>May 5 2020</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div><a href="rel_supplier_detail.html"><img src="assets/images/icons/file.svg" height="40" alt="" class="thumb-sm"></a></div>
+                                                        </td>
+                                                        <td>ANN2020</td>
+                                                        <td><span class="badge badge-info">Finalized</span></td>
+                                                        <td>
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" id="customradioInline03" name="customradioInline03" class="custom-control-input" data-parsley-multiple="customRadioInline3"> 
+                                                                <label class="custom-control-label" for="customradioInline03"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" id="customradioInline04" name="customradioInline04" class="custom-control-input" data-parsley-multiple="customRadioInline4"> 
+                                                                <label class="custom-control-label" for="customradioInline04"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>Primary Location</td>
+                                                        <td><i class="icofont-rupee"></i> 1,430.00</td>
+                                                        <td>May 1 2020</td>
+                                                        <td>May 5 2020</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div><a href="rel_supplier_detail.html"><img src="assets/images/icons/file.svg" height="40" alt="" class="thumb-sm"></a></div>
+                                                        </td>
+                                                        <td>ANN2020</td>
+                                                        <td><span class="badge badge-success">Active</span></td>
+                                                        <td>
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" id="customradioInline05" name="customradioInline05" class="custom-control-input" data-parsley-multiple="customRadioInline5"> 
+                                                                <label class="custom-control-label" for="customradioInline05"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" id="customradioInline06" name="customradioInline06" class="custom-control-input" data-parsley-multiple="customRadioInline6"> 
+                                                                <label class="custom-control-label" for="customradioInline06"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>Primary Location</td>
+                                                        <td><i class="icofont-rupee"></i> 1,430.00</td>
+                                                        <td>May 1 2020</td>
+                                                        <td>May 5 2020</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane show" id="rel-insights" role="tabpanel">
+                                        <div class="row pt-4 m-0">
+                                            <div class="col-md-4">
+                                                <div class="card card-insight">
+                                                    <div class="card-header bg-white">
+                                                        <h4 class="my-0 header-title">Total Sales</h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <p>Chart Here</p>
+                                                    </div>
+                                                    <div class="card-footer p-0 bg-white">
+                                                        <div class="my-2 text-right"><a href="#" class="btn btn-link">View full report <i class="icofont-rounded-right"></i></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="card card-insight">
+                                                    <div class="card-header bg-white">
+                                                        <h4 class="my-0 header-title">Top SKU's by Sales</h4>
+                                                    </div>
+                                                    <div class="card-body p-0">
+                                                        <table class="table mb-0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Small - Diamond Ring - DR-001-S</td>
+                                                                    <td class="text-right">3200.00</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Large - Diamond Ring - DR-001-L</td>
+                                                                    <td class="text-right">1600.00</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Light Gray / Medium - Sweatshirt Hoodie - SW001-LG-M</td>
+                                                                    <td class="text-right">240.00</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Dark Blue / Medium - Cotton T-Shirt - T001-DB-M</td>
+                                                                    <td class="text-right">175.00</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Dark Gray / Large - Cotton T-Shirt - T001-DG-L</td>
+                                                                    <td class="text-right">17.00</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="card-footer p-0 bg-white">
+                                                        <div class="my-2 text-right"><a href="#" class="btn btn-link">View full report <i class="icofont-rounded-right"></i></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="card card-insight">
+                                                    <div class="card-header bg-white">
+                                                        <h4 class="my-0 header-title">Top SKU's by Sales</h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <h3>₹ 1,238.00</h3>
+                                                                <h5>Historic LTV</h5>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <h3>May 3 2020</h3>
+                                                                <h5>Since</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- container-fluid -->
+                </div>
+                <!-- content -->
+                <footer class="footer">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Handicraft Dashboard | GoExplore India.</footer>
+            </div>
+            <!-- ============================================================== --><!-- End Right content here --><!-- ============================================================== -->
+        </div>
+        <!-- END wrapper -->
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/waves.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>

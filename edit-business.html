@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, shrink-to-fit=no" />
+	    <meta name="author" content="Go Explore India : Dashboard" />
+	    <meta name="description" content="Go Explore India : Dashboard" />
+	    <meta name="copyright" content="Go Explore India : Dashboard" />
+	    <meta name="keywords" content="" />
+	    <meta name="robots" content="Go Explore India : Dashboard || Index" />
+	    <meta name="DC.title" content="Go Explore India : Dashboard" />
+	    <meta name="geo.placename" content="Dev Kumar , USA" />
+	    <meta name="geo.region" content="33067" />
+	    <meta name="geo.placename" content="825, 13th Cross Rd, Hebbal, Bovipalya, Nagapura, Bengaluru, Karnataka 560086 India" />
+	    <meta name="geo.region" content="560086" />
+	    <meta name="geo.placename" content="7110 W Cypresshead Dr Parkland, Florida 33067-2308 United States " />
+        <meta name="geo.region" content="33067" />
+
+
+	    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" /> 
+	    <title>Dashboard | Go Explore India</title>
+
+        <!--Chartist Chart CSS -->
+        <!-- <link rel="stylesheet" href="../plugins/chartist/css/chartist.min.css"> -->
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet" />
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <!-- Begin page -->
+        <div id="wrapper">
+            <!-- Top Bar Start -->
+            <div class="topbar">
+                <!-- LOGO -->
+                <div class="topbar-left">
+                	<a href="index.html" class="logo">
+                		<span>
+                			<img src="assets/images/logo_white.svg" alt="" height="24"/>
+                		</span>
+                		<i>
+                			<img src="assets/images/logo.svg" alt="" height="50" />
+                		</i>
+                	</a>
+                </div>
+
+                <nav class="navbar-custom">
+                    <ul class="navbar-right d-flex list-inline float-right mb-0">
+                        <!-- full screen -->
+                        <li class="dropdown notification-list d-none d-md-block"><a class="nav-link waves-effect" href="#" id="btn-fullscreen"><i class="mdi mdi-fullscreen noti-icon"></i></a></li>
+                        <!-- notification -->
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"><i class="mdi mdi-bell-outline noti-icon"></i> <span class="badge badge-pill badge-danger noti-icon-badge">3</span></a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+                                <h6 class="dropdown-item-text">Notifications (258)</h6>
+                                <div class="slimscroll notification-item-list">
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                        <div class="notify-icon bg-success"><i class="mdi mdi-cart-outline"></i></div>
+                                        <p class="notify-details">Your order is placed<span class="text-muted">Dummy text of the printing and typesetting industry.</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-warning"><i class="mdi mdi-message-text-outline"></i></div>
+                                        <p class="notify-details">New Message received<span class="text-muted">You have 87 unread messages</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-info"><i class="mdi mdi-glass-cocktail"></i></div>
+                                        <p class="notify-details">Your item is shipped<span class="text-muted">It is a long established fact that a reader will</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-primary"><i class="mdi mdi-cart-outline"></i></div>
+                                        <p class="notify-details">Your order is placed<span class="text-muted">Dummy text of the printing and typesetting industry.</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-danger"><i class="mdi mdi-message-text-outline"></i></div>
+                                        <p class="notify-details">New Message received<span class="text-muted">You have 87 unread messages</span></p>
+                                    </a>
+                                </div>
+                                <!-- All--> 
+                                <a href="javascript:void(0);" class="dropdown-item text-center text-primary">View all <i class="fi-arrow-right"></i></a>
+                            </div>
+                        </li>
+                        <!-- logoutg -->
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect" href="login.html"><i class="mdi mdi-power noti-icon"></i></a>
+                        </li>
+                        <!-- profile -->
+                        <li class="dropdown notification-list">
+                            <div class="nav-pro-img">
+                                <a class="nav-link arrow-none waves-effect nav-user" href="#" data-toggle="modal" data-target=".dtUserProfile"><img src="assets/images/users/user-9.jpg" alt="user" class="rounded-circle"></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list-inline menu-left mb-0">
+                        <li class="float-left"><button class="button-menu-mobile open-left waves-effect"><i class="mdi mdi-menu"></i></button></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--  Profile Section -->
+            <div class="modal fade dtUserProfile" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content" style="background-color: transparent;">
+                        <div class="modal-body p-0">
+                            <div class="wrapperPro">
+								<div class="top-icons">
+									<a href="#" data-dismiss="modal"><i class="fas fa-long-arrow-alt-left"></i></a>
+
+									<a href="login.html"><i class="far mdi mdi-power"></i></a>
+								</div>
+								
+								<div class="profile">
+									<img src="assets/images/users/user-9.jpg" class="thumbnail">
+									<h3 class="name">Beverly Little</h3>
+									<p class="title">Admin</p>
+									<!-- <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam aliquid porro!</p> -->
+									<ul class="list-group list-group-flush mb-3">
+	                            		<li class="list-group-item"><i class="ion ion-md-barcode"></i> <span>15487</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-md-alarm"></i> <span>09:28 AM</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-md-keypad"></i> <span>107</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-md-phone-portrait"></i> <span>+971 50 587 0654</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-md-at"></i> <span>beverly@gmail.com</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-ios-flag"></i> <span>Indian</span></li>
+	                            	</ul>
+									<a class="btn bg-animate" href="profile.html">Edit Profile</a>
+								</div>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu">
+                <div class="slimscroll-menu" id="remove-scroll">
+                    <div id="sidebar-menu">
+                        <ul class="metismenu" id="side-menu">
+                            <li><a href="index.html" class="waves-effect"><i class="ti-dashboard"></i><span>Dashboard</span></a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-package"></i> <span>Inventory <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="product.html">Product</a></li>
+                                    <li><a href="variants.html">Variants</a></li>
+                                    <li><a href="batches.html">Batches</a></li>
+                                    <li><a href="price-lists.html">Price List</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="relationships.html" class="waves-effect"><i class="ti-user"></i><span> Relationships</span></a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-layout-accordion-list"></i> <span>Sales Orders <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Orders</a></li>
+                                    <li><a href="#">Invoices</a></li>
+                                    <li><a href="#">Shipments</a></li>
+                                    <li><a href="#">Returns</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-shopping-cart"></i> <span>Stock Control <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Purchase Orders</a></li>
+                                    <li><a href="#">Stock Transfers</a></li>
+                                    <li><a href="#">Stock Adjustments</a></li>
+                                    <li><a href="#">Stocktakes</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-industry"></i> <span>Manufacturing <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Overview</a></li>
+                                    <li><a href="#">Production Orders</a></li>
+                                    <li><a href="#">Bills of Materials</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-shopping-cart-full"></i> <span>B2B eCommerce <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Dashboard</a></li>
+                                    <li><a href="#">Products</a></li>
+                                    <li><a href="#">Customers</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="waves-effect"><i class="ti-credit-card"></i><span> Payments</span></a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-bar-chart-alt"></i> <span>Intelligence <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Reporting </a></li>
+                                    <li><a href="#">Saved Reports</a></li>
+                                    <li><a href="#">Forecasting</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="page-title-box">
+                            <div class="row align-items-center">
+                                <div class="col-sm-6">
+                                    <h4 class="page-title"><a href="relationships.html">Relationships</a> / <small>Edit Business</small></h4>
+                                    <!-- <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="index.html"><i class="ti-home"></i></a></li>
+                                        <li class="breadcrumb-item active">Dashboard</li>
+                                    </ol> -->
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="tb-right">
+                                        <div class="dropdown"><a href="relationships.html" class="btn btn-outline-danger dropdown-toggle arrow-none waves-effect waves-light">Delete</a></div>
+                                        <div class="dropdown"><a href="rel_business_detail.html" class="btn btn-outline-secondary dropdown-toggle arrow-none waves-effect waves-light">Cancel</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card bg-white src-height">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-8 mx-auto">
+                                                <div class="sec-heading">
+                                                    <h5>Company Details</h5>
+                                                    <h6>Provide basic information on this company</h6>
+                                                </div>
+                                                <form class="mb-5" action="#">
+                                                    <div class="form-group row">
+                                                        <label for="companyName" class="col-sm-3 col-form-label text-right">Company Name <span>*</span></label>
+                                                        <div class="col-sm-6">
+                                                            <input type="text" class="form-control" id="companyName" value="Henry Salt">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="supplier" class="col-sm-3 col-form-label text-right">Company Type</label>
+                                                        <div class="col-sm-6">
+                                                            <select class="form-control custom-select" id="supplier">
+                                                                <option selected>Business Customer</option>
+                                                                <option>Consumer</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="companyCode" class="col-sm-3 col-form-label text-right">Company Code</label>
+                                                        <div class="col-sm-6">
+                                                            <input type="text" class="form-control" id="companyCode" placeholder="e.g. ABC123">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="taxNumber" class="col-sm-3 col-form-label text-right">Tax Number</label>
+                                                        <div class="col-sm-6">
+                                                            <input type="text" class="form-control" id="taxNumber" placeholder="e.g. ESX9900909X">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="companyPhoneNumber" class="col-sm-3 col-form-label text-right">Company Phone Number</label>
+                                                        <div class="col-sm-6">
+                                                            <input type="text" class="form-control" id="companyPhoneNumber" value="+199899899898">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="companyFaxNumber" class="col-sm-3 col-form-label text-right">Company Fax Number</label>
+                                                        <div class="col-sm-6">
+                                                            <input type="text" class="form-control" id="companyFaxNumber" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="companyWebsite" class="col-sm-3 col-form-label text-right">Company Website</label>
+                                                        <div class="col-sm-6">
+                                                            <input type="text" class="form-control" id="companyWebsite" value="www.annantasource.com">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="companyEmailAddress" class="col-sm-3 col-form-label text-right">Company Email Address</label>
+                                                        <div class="col-sm-6">
+                                                            <input type="text" class="form-control" id="companyEmailAddress" value="hrnry@annantasource.com">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="description" class="col-sm-3 col-form-label text-right">Description</label>
+                                                        <div class="col-sm-6">
+                                                            <textarea class="form-control" id="description" rows="4">Inventory & Order Management For Smart Brands</textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="tag" class="col-sm-3 col-form-label text-right">Tag</label>
+                                                        <div class="col-sm-6">
+                                                            <input type="text" class="form-control" id="tag" placeholder="e.g. Partners">
+                                                        </div>
+                                                    </div>
+                                                </form>
+
+                                                <div class="sec-heading mb-1">
+                                                    <h5>Default Settings</h5>
+                                                    <h6>Set defaults such which will be used when creating Sales Orders for this company</h6>
+                                                </div>
+                                                <form class="mb-5" action="#">
+                                                    <div class="form-group row">
+                                                        <label for="defaultPricelist" class="col-sm-3 col-form-label text-right">Default Price List</label>
+                                                        <div class="col-sm-6">
+                                                            <select class="form-control custom-select" id="defaultPricelist">
+                                                                <option selected="" disabled="" value="">Select a price list</option>
+                                                                <option>Retail (USD)</option>
+                                                                <option>Wholesale (USD)</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="defaultDiscount" class="col-sm-3 col-form-label text-right">Default Discount</label>
+                                                        <div class="col-sm-6">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" id="defaultDiscount">
+                                                                <div class="input-group-append">
+                                                                    <span class="input-group-text" id="defaultDiscount">%</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="defaultPaymentTerm" class="col-sm-3 col-form-label text-right">Default Payment Term</label>
+                                                        <div class="col-sm-6">
+                                                            <select class="form-control custom-select" id="defaultPaymentTerm">
+                                                                <option selected="" disabled="" value="">Select a payment term</option>
+                                                                <option>NET10</option>
+                                                                <option>NET30</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="minimumOrderValue" class="col-sm-3 col-form-label text-right">Minimum Order Value</label>
+                                                        <div class="col-sm-6">
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <span class="input-group-text" id="minimumOrderValue">$</span>
+                                                                </div>
+                                                                <input type="text" class="form-control" id="minimumOrderValue">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="assignedTo" class="col-sm-3 col-form-label text-right">Assigned To</label>
+                                                        <div class="col-sm-6">
+                                                            <select class="form-control custom-select" id="assignedTo">
+                                                                <option selected="" disabled="" value="">Select a team member</option>
+                                                                <option>Dev Kumar</option>
+                                                                <option>Dinesh</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="defaultTaxType" class="col-sm-3 col-form-label text-right">Default Tax Type</label>
+                                                        <div class="col-sm-6">
+                                                            <select class="form-control custom-select" id="defaultTaxType">
+                                                                <option selected="" disabled="" value="">Select a tax type</option>
+                                                                <option>Sales Tax (SALES) 15%</option>
+                                                                <option>Tax Exempt (TAX EXEMPT) 0%</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="defaultStockLocation" class="col-sm-3 col-form-label text-right">Default Stock Location</label>
+                                                        <div class="col-sm-6">
+                                                            <select class="form-control custom-select" id="defaultStockLocation">
+                                                                <option selected="" disabled="" value="">Select a stock location</option>
+                                                                <option>Primary Location</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="defaultPaymentMethod" class="col-sm-3 col-form-label text-right">Default Payment Method</label>
+                                                        <div class="col-sm-6">
+                                                            <select class="form-control custom-select" id="defaultPaymentMethod">
+                                                                <option selected="" disabled="" value="">Select a default payment method</option>
+                                                                <option>Bank Transfer</option>
+                                                                <option>Cash</option>
+                                                                <option>Credit Card</option>
+                                                                <option>Paypal</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="taxShippingRates" class="col-sm-3 col-form-label text-right">Charge Tax on Shipping Rates</label>
+                                                        <div class="col-sm-6">
+                                                            <select class="form-control custom-select" id="taxShippingRates">
+                                                                <option selected="" disabled="" value="">Default to General Settings</option>
+                                                                <option>Enabled</option>
+                                                                <option>Disabled</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </form>
+
+                                                <div class="sec-heading">
+                                                    <h5>Company Status</h5>
+                                                    <div class="switcher">
+                                                        <span>
+                                                            <label class="switch activities_switch">
+                                                                <input type="checkbox" checked />
+                                                                <span class="slider round"></span>
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <hr />
+
+                                                <a class="btn btn-primary btn-cust waves-effect waves-light" href="rel_business_detail.html">Update Customer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </div>
+                    <!-- container-fluid -->
+                </div>
+                <!-- content -->
+                <footer class="footer">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Handicraft Dashboard | GoExplore India.</footer>
+            </div>
+            <!-- ============================================================== --><!-- End Right content here --><!-- ============================================================== -->
+        </div>
+        <!-- END wrapper -->
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/waves.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>

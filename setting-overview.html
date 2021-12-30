@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, shrink-to-fit=no" />
+	    <meta name="author" content="Go Explore India : Dashboard" />
+	    <meta name="description" content="Go Explore India : Dashboard" />
+	    <meta name="copyright" content="Go Explore India : Dashboard" />
+	    <meta name="keywords" content="" />
+	    <meta name="robots" content="Go Explore India : Dashboard || Index" />
+	    <meta name="DC.title" content="Go Explore India : Dashboard" />
+	    <meta name="geo.placename" content="Dev Kumar , USA" />
+	    <meta name="geo.region" content="33067" />
+	    <meta name="geo.placename" content="825, 13th Cross Rd, Hebbal, Bovipalya, Nagapura, Bengaluru, Karnataka 560086 India" />
+	    <meta name="geo.region" content="560086" />
+	    <meta name="geo.placename" content="7110 W Cypresshead Dr Parkland, Florida 33067-2308 United States " />
+        <meta name="geo.region" content="33067" />
+
+
+	    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+	    <title>Dashboard - Al Shamil</title>
+
+        <!--Chartist Chart CSS -->
+        <!-- <link rel="stylesheet" href="../plugins/chartist/css/chartist.min.css"> -->
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet" />
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/icofont.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!-- Begin page -->
+        <div id="wrapper">
+            <!-- Top Bar Start -->
+            <div class="topbar">
+                <!-- LOGO -->
+                <div class="topbar-left">
+                	<a href="index.html" class="logo">
+                		<span>
+                			<img src="assets/images/logo_white.svg" alt="" height="24"/>
+                		</span>
+                		<i>
+                			<img src="assets/images/logo.svg" alt="" height="50" />
+                		</i>
+                	</a>
+                </div>
+
+                <nav class="navbar-custom">
+                    <ul class="navbar-right d-flex list-inline float-right mb-0">
+                        <!-- full screen -->
+                        <li class="dropdown notification-list d-none d-md-block"><a class="nav-link waves-effect" href="#" id="btn-fullscreen"><i class="mdi mdi-fullscreen noti-icon"></i></a></li>
+                        <!-- notification -->
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"><i class="mdi mdi-bell-outline noti-icon"></i> <span class="badge badge-pill badge-danger noti-icon-badge">3</span></a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+                                <h6 class="dropdown-item-text">Notifications (258)</h6>
+                                <div class="slimscroll notification-item-list">
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                        <div class="notify-icon bg-success"><i class="mdi mdi-cart-outline"></i></div>
+                                        <p class="notify-details">Your order is placed<span class="text-muted">Dummy text of the printing and typesetting industry.</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-warning"><i class="mdi mdi-message-text-outline"></i></div>
+                                        <p class="notify-details">New Message received<span class="text-muted">You have 87 unread messages</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-info"><i class="mdi mdi-glass-cocktail"></i></div>
+                                        <p class="notify-details">Your item is shipped<span class="text-muted">It is a long established fact that a reader will</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-primary"><i class="mdi mdi-cart-outline"></i></div>
+                                        <p class="notify-details">Your order is placed<span class="text-muted">Dummy text of the printing and typesetting industry.</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-danger"><i class="mdi mdi-message-text-outline"></i></div>
+                                        <p class="notify-details">New Message received<span class="text-muted">You have 87 unread messages</span></p>
+                                    </a>
+                                </div>
+                                <!-- All--> 
+                                <a href="javascript:void(0);" class="dropdown-item text-center text-primary">View all <i class="fi-arrow-right"></i></a>
+                            </div>
+                        </li>
+                        <!-- logoutg -->
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect" href="login.html"><i class="mdi mdi-power noti-icon"></i></a>
+                        </li>
+                        <!-- profile -->
+                        <li class="dropdown notification-list">
+                            <div class="nav-pro-img">
+                                <a class="nav-link arrow-none waves-effect nav-user" href="#" data-toggle="modal" data-target=".dtUserProfile"><img src="assets/images/users/user-9.jpg" alt="user" class="rounded-circle"></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list-inline menu-left mb-0">
+                        <li class="float-left"><button class="button-menu-mobile open-left waves-effect"><i class="mdi mdi-menu"></i></button></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--  Profile Section -->
+            <div class="modal fade dtUserProfile" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm modal-dialog-centered">
+                    <div class="modal-content" style="background-color: transparent;">
+                        <div class="modal-body p-0">
+                            <div class="wrapperPro">
+								<div class="top-icons">
+									<a href="#" data-dismiss="modal"><i class="fas fa-long-arrow-alt-left"></i></a>
+
+									<a href="login.html"><i class="far mdi mdi-power"></i></a>
+								</div>
+								
+								<div class="profile">
+									<img src="assets/images/users/user-9.jpg" class="thumbnail">
+									<h3 class="name">Beverly Little</h3>
+									<p class="title">HR Manager</p>
+									<!-- <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam aliquid porro!</p> -->
+									<ul class="list-group list-group-flush mb-3">
+	                            		<li class="list-group-item"><i class="ion ion-md-barcode"></i> <span>15487</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-md-phone-portrait"></i> <span>+971 50 587 0654</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-md-at"></i> <span>beverly@gmail.com</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-ios-flag"></i> <span>Indian</span></li>
+	                            	</ul>
+									<a class="btn bg-animate" href="profile.html">Edit Profile</a>
+								</div>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu">
+                <div class="slimscroll-menu" id="remove-scroll">
+                    <div id="sidebar-menu">
+                        <ul class="metismenu" id="side-menu">
+                            <li><a href="index.html" class="waves-effect"><i class="ti-dashboard"></i><span>Dashboard</span></a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-package"></i> <span>Inventory <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="product.html">Product</a></li>
+                                    <li><a href="variants.html">Variants</a></li>
+                                    <li><a href="batches.html">Batches</a></li>
+                                    <li><a href="price-lists.html">Price List</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="relationships.html" class="waves-effect"><i class="ti-user"></i><span> Relationships</span></a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-layout-accordion-list"></i> <span>Sales Orders <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="orders.html">Orders</a></li>
+                                    <li><a href="invoices.html">Invoices</a></li>
+                                    <li><a href="shipments.html">Shipments</a></li>
+                                    <li><a href="returns.html">Returns</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-shopping-cart"></i> <span>Stock Control <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="purchase-orders.html">Purchase Orders</a></li>
+                                    <li><a href="stock-transfers.html">Stock Transfers</a></li>
+                                    <li><a href="stock-adjustments.html">Stock Adjustments</a></li>
+                                    <li><a href="stocktakes.html">Stocktakes</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-industry"></i> <span>Manufacturing <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Overview</a></li>
+                                    <li><a href="production-orders.html">Production Orders</a></li>
+                                    <li><a href="bills-of-materials.html">Bills of Materials</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-shopping-cart-full"></i> <span>B2B eCommerce <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Dashboard</a></li>
+                                    <li><a href="#">Products</a></li>
+                                    <li><a href="#">Customers</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-bar-chart-alt"></i> <span>Intelligence <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Reporting </a></li>
+                                    <li><a href="#">Saved Reports</a></li>
+                                    <li><a href="#">Forecasting</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <hr>
+                            </li>
+                            <li class="">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="icofont-settings"></i> <span>Settings <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="setting-overview.html">Overview </a></li>
+                                    <li><a href="#">Company Details</a></li>
+                                    <li><a href="#">Configuration</a></li>
+                                    <li><a href="#">Shipping</a></li>
+                                    <li><a href="#">Brands and Documents</a></li>
+                                    <li><a href="#">Email Templates</a></li>
+                                    <li><a href="#">Plans &amp; Billing</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="page-title-box">
+                            <div class="row align-items-center">
+                                <div class="col-sm-6">
+                                    <h4 class="page-title">Overview</h4>
+                                </div>
+                                <div class="col-sm-6">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-12">
+                               <div class="card card-setting src-height">
+                                   <div class="card-body">
+                                        <div class="quick-action">
+                                            <div class="sec-heading mb-2 mt-3">
+                                                <h6>Quick Actions</h6>
+                                            </div>
+                                            <hr class="mt-0" />
+
+                                            <div class="quick-action__link">
+                                                <a href="#addLocation" class="btn-link text-primary" data-toggle="modal" data-target="#"><i class="icofont-location-pin"></i> Add Location</a>
+                                                <a href="#addTeamMember" class="btn-link text-primary" data-toggle="modal" data-target="#"><i class="icofont-users"></i> Invice Team Members</a>
+                                                <a href="#" class="btn-link text-primary"><i class="icofont-users"></i> Add Currency</a>
+                                                <a href="#" class="btn-link text-primary"><i class="icofont-users"></i> Manage Payment Terms</a>
+                                                <a href="#" class="btn-link text-primary"><i class="icofont-users"></i> Manage Taxes</a>
+                                                <a href="#" class="btn-link text-primary"><i class="icofont-user"></i> My Profile</a>
+                                            </div>
+
+                                            <!-- Add Location Modal -->
+                                            <div class="modal fade" id="addLocation" tabindex="-1" role="dialog" aria-labelledby="addLocationTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-light">
+                                                            <h5 class="modal-title" id="addLocationTitle">Add A New Location</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form action="#">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group row">
+                                                                            <label for="lable" class="col-sm-4 col-form-label text-right">Lable <span>*</span></label>
+                                                                            <div class="col-sm-7">
+                                                                                <input type="text" class="form-control" id="lable" value="" placeholder="Primary Location">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group row">
+                                                                            <label for="addressLineOne" class="col-sm-4 col-form-label text-right">Address Line 1 <span class="text-danger">*</span></label>
+                                                                            <div class="col-sm-7">
+                                                                                <input type="text" class="form-control" id="addressLineOne" placeholder="2212B Street Name">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group row">
+                                                                            <label for="addressLineTwo" class="col-sm-4 col-form-label text-right">Address Line 2</label>
+                                                                            <div class="col-sm-7">
+                                                                                <input type="text" class="form-control" id="addressLineTwo" placeholder="1st Floor">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group row">
+                                                                            <label for="suburb" class="col-sm-4 col-form-label text-right">Suburb</label>
+                                                                            <div class="col-sm-7">
+                                                                                <input type="text" class="form-control" id="suburb" value="" placeholder="Suburb">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group row">
+                                                                            <label for="city" class="col-sm-4 col-form-label text-right">City</label>
+                                                                            <div class="col-sm-7">
+                                                                                <input type="text" class="form-control" id="city" value="" placeholder="City">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group row">
+                                                                            <label for="State" class="col-sm-4 col-form-label text-right">State</label>
+                                                                            <div class="col-sm-7">
+                                                                                <input type="text" class="form-control" id="State" value="" placeholder="State">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group row">
+                                                                            <label for="zipCode" class="col-sm-4 col-form-label text-right">Zip Code</label>
+                                                                            <div class="col-sm-7">
+                                                                                <input type="text" class="form-control" id="zipCode" value="" placeholder="560029">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group row">
+                                                                            <label for="country" class="col-sm-4 col-form-label text-right">Country</label>
+                                                                            <div class="col-sm-7">
+                                                                                <select name="country" id="" class="form-control">
+                                                                                    <option value="" selected>Select a Country</option>
+                                                                                    <option value="">India</option>
+                                                                                    <option value="">USA</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group row">
+                                                                            <label for="country" class="col-sm-4 col-form-label text-right"></label>
+                                                                            <div class="col-sm-7">
+                                                                                <div class="custom-control custom-checkbox custom-control-inline">
+                                                                                    <input type="checkbox" id="manageStockLevels1" checked="" name="manageStockLevels1" class="custom-control-input"> 
+                                                                                    <label class="custom-control-label pt-0" for="manageStockLevels1">Holds stock</label>
+                                                                                </div>
+                                                                                <p>
+                                                                                    Only locations that hold stock will be available for selection in Sales Orders and Stock Control.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="modal-footer p-0 bg-light">
+                                                            <button type="button" class="btn m-0 rounded-0" data-dismiss="modal">Cancel</button>
+                                                            <button type="button" class="btn btn-primary m-0 rounded-0">Create</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Add a new Team Member Modal -->
+                                            <div class="modal fade" id="addTeamMember" tabindex="-1" role="dialog" aria-labelledby="addTeamMemberTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-light">
+                                                            <h5 class="modal-title" id="addTeamMemberTitle">Add a new Team Member</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form action="#">
+                                                                <div class="row">
+                                                                    <div class="col-md-6 align-items-center">
+                                                                        <img src="assets/images/logo.svg" alt="">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <input type="email" class="form-control" id="email" value="" placeholder="Email">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control" id="firstName" value="" placeholder="First Name">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control" id="lastName" value="" placeholder="Last Name">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <select name="country" id="" class="form-control">
+                                                                                <option selected>Choose Role</option>
+                                                                                <option value="">India</option>
+                                                                                <option value="">USA</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="modal-footer p-0 bg-light">
+                                                            <button type="button" class="btn m-0 rounded-0" data-dismiss="modal">Cancel</button>
+                                                            <button type="button" class="btn btn-primary m-0 rounded-0">Send Invitation</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="setting-overview">
+                                            <div class="sec-heading mb-2 mt-5">
+                                                <h6>Configuration</h6>
+                                            </div>
+                                            <hr class="mt-0" />
+
+                                            <div class="setting-overview__masterData">
+                                                <a href="#">
+                                                    <img src="assets/images/icons/company_details.svg" alt="Add Shift">
+                                                    <span>Company Details</span>
+                                                    <p>Details specific to your own company.</p>
+                                                </a>
+                                                <a href="#">
+                                                    <img src="assets/images/icons/configuration.svg" alt="Working Days">
+                                                    <span>Configuration</span>
+                                                    <p>Nitty-gritty of inventory and order management.</p>
+                                                </a>
+                                                <a href="#">
+                                                    <img src="assets/images/icons/doc.svg" alt="Public Holiday">
+                                                    <span>Brands &amp; Documents</span>
+                                                    <p>How you appear to your customers.</p>
+                                                </a>
+                                                <a href="#">
+                                                    <img src="assets/images/icons/emal_template.svg" alt="Leave Type">
+                                                    <span>Email Templates</span>
+                                                    <p>Create templates for your transaction emails.</p>
+                                                </a>
+                                                <a href="#">
+                                                    <img src="assets/images/icons/shipping.svg" alt="Department">
+                                                    <span>Shipping</span>
+                                                    <p>Set up your shipping zones and rates.</p>
+                                                </a>
+                                                <a href="#">
+                                                    <img src="assets/images/icons/plans.svg" alt="Designation">
+                                                    <span>Plans &amp; Billing</span>
+                                                    <p>What you pay, what you've paid, and how you pay.</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                   </div>
+                               </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- container-fluid -->
+                </div>
+                <!-- content -->
+                <footer class="footer">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Al Shamil Computer.</footer>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- END wrapper -->
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/waves.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>

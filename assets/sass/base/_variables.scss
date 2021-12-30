@@ -1,0 +1,32 @@
+// Online Font Link
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500|Sarabun:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i|Varela+Round');
+// Fonts
+$body-font: 'Source Sans Pro', sans-serif;
+$heading-font: 'Varela Round', sans-serif;
+
+// Colors
+$cblue: #3e5de9;
+$hcolor: #203079;
+$color1Blue: #1488CC;
+$heading-color: #536976;
+
+// Gradient
+// 60deg
+$blueGra: linear-gradient(60deg,#26c6da,#00acc1);
+$yellowGra: linear-gradient(60deg,#ffa726,#fb8c00);
+$roseGra: linear-gradient(60deg,#ec407a,#d81b60);
+$redGra: linear-gradient(60deg,#DC281E,#F00000);
+$greenGra: linear-gradient(60deg,#66bb6a,#43a047);
+
+
+$brand-primary: linear-gradient(100deg, #2b90d9, #4ea1d3);
+$brand-secondary: linear-gradient(100deg, #77AAAD, #2EC4B6);
+$brand-two: linear-gradient(100deg, #e1e5e6, #f7f7f7);
+$bezier: cubic-bezier(.19,1,.22,1);
+$border-radius: 0px;
+
+// Profile var
+$purple-gradient: linear-gradient(to bottom right, #2b90d9, #4ea1d3);
+$shadow: 0 13px 26px rgba(#000, .2), 0 3px 6px rgba(#000, .2);
+

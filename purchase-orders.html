@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, shrink-to-fit=no" />
+	    <meta name="author" content="Go Explore India : Dashboard" />
+	    <meta name="description" content="Go Explore India : Dashboard" />
+	    <meta name="copyright" content="Go Explore India : Dashboard" />
+	    <meta name="keywords" content="" />
+	    <meta name="robots" content="Go Explore India : Dashboard || Index" />
+	    <meta name="DC.title" content="Go Explore India : Dashboard" />
+	    <meta name="geo.placename" content="Dev Kumar , USA" />
+	    <meta name="geo.region" content="33067" />
+	    <meta name="geo.placename" content="825, 13th Cross Rd, Hebbal, Bovipalya, Nagapura, Bengaluru, Karnataka 560086 India" />
+	    <meta name="geo.region" content="560086" />
+	    <meta name="geo.placename" content="7110 W Cypresshead Dr Parkland, Florida 33067-2308 United States " />
+        <meta name="geo.region" content="33067" />
+
+
+	    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" /> 
+	    <title>Dashboard | Go Explore India</title>
+
+        <!--Chartist Chart CSS -->
+        <!-- <link rel="stylesheet" href="../plugins/chartist/css/chartist.min.css"> -->
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet" />
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <!-- Begin page -->
+        <div id="wrapper">
+            <!-- Top Bar Start -->
+            <div class="topbar">
+                <!-- LOGO -->
+                <div class="topbar-left">
+                	<a href="index.html" class="logo">
+                		<span>
+                			<img src="assets/images/logo_white.svg" alt="" height="24"/>
+                		</span>
+                		<i>
+                			<img src="assets/images/logo.svg" alt="" height="50" />
+                		</i>
+                	</a>
+                </div>
+
+                <nav class="navbar-custom">
+                    <ul class="navbar-right d-flex list-inline float-right mb-0">
+                        <!-- full screen -->
+                        <li class="dropdown notification-list d-none d-md-block"><a class="nav-link waves-effect" href="#" id="btn-fullscreen"><i class="mdi mdi-fullscreen noti-icon"></i></a></li>
+                        <!-- notification -->
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"><i class="mdi mdi-bell-outline noti-icon"></i> <span class="badge badge-pill badge-danger noti-icon-badge">3</span></a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+                                <h6 class="dropdown-item-text">Notifications (258)</h6>
+                                <div class="slimscroll notification-item-list">
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                        <div class="notify-icon bg-success"><i class="mdi mdi-cart-outline"></i></div>
+                                        <p class="notify-details">Your order is placed<span class="text-muted">Dummy text of the printing and typesetting industry.</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-warning"><i class="mdi mdi-message-text-outline"></i></div>
+                                        <p class="notify-details">New Message received<span class="text-muted">You have 87 unread messages</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-info"><i class="mdi mdi-glass-cocktail"></i></div>
+                                        <p class="notify-details">Your item is shipped<span class="text-muted">It is a long established fact that a reader will</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-primary"><i class="mdi mdi-cart-outline"></i></div>
+                                        <p class="notify-details">Your order is placed<span class="text-muted">Dummy text of the printing and typesetting industry.</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-danger"><i class="mdi mdi-message-text-outline"></i></div>
+                                        <p class="notify-details">New Message received<span class="text-muted">You have 87 unread messages</span></p>
+                                    </a>
+                                </div>
+                                <!-- All--> 
+                                <a href="javascript:void(0);" class="dropdown-item text-center text-primary">View all <i class="fi-arrow-right"></i></a>
+                            </div>
+                        </li>
+                        <!-- logoutg -->
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect" href="login.html"><i class="mdi mdi-power noti-icon"></i></a>
+                        </li>
+                        <!-- profile -->
+                        <li class="dropdown notification-list">
+                            <div class="nav-pro-img">
+                                <a class="nav-link arrow-none waves-effect nav-user" href="#" data-toggle="modal" data-target=".dtUserProfile"><img src="assets/images/users/user-9.jpg" alt="user" class="rounded-circle"></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list-inline menu-left mb-0">
+                        <li class="float-left"><button class="button-menu-mobile open-left waves-effect"><i class="mdi mdi-menu"></i></button></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--  Profile Section -->
+            <div class="modal fade dtUserProfile" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content" style="background-color: transparent;">
+                        <div class="modal-body p-0">
+                            <div class="wrapperPro">
+								<div class="top-icons">
+									<a href="#" data-dismiss="modal"><i class="fas fa-long-arrow-alt-left"></i></a>
+
+									<a href="login.html"><i class="far mdi mdi-power"></i></a>
+								</div>
+								
+								<div class="profile">
+									<img src="assets/images/users/user-9.jpg" class="thumbnail">
+									<h3 class="name">Beverly Little</h3>
+									<p class="title">Admin</p>
+									<!-- <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam aliquid porro!</p> -->
+									<ul class="list-group list-group-flush mb-3">
+	                            		<li class="list-group-item"><i class="ion ion-md-barcode"></i> <span>15487</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-md-alarm"></i> <span>09:28 AM</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-md-keypad"></i> <span>107</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-md-phone-portrait"></i> <span>+971 50 587 0654</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-md-at"></i> <span>beverly@gmail.com</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-ios-flag"></i> <span>Indian</span></li>
+	                            	</ul>
+									<a class="btn bg-animate" href="profile.html">Edit Profile</a>
+								</div>
+								
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu">
+                <div class="slimscroll-menu" id="remove-scroll">
+                    <div id="sidebar-menu">
+                        <ul class="metismenu" id="side-menu">
+                            <li><a href="index.html" class="waves-effect"><i class="ti-dashboard"></i><span>Dashboard</span></a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-package"></i> <span>Inventory <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="product.html">Product</a></li>
+                                    <li><a href="variants.html">Variants</a></li>
+                                    <li><a href="batches.html">Batches</a></li>
+                                    <li><a href="price-lists.html">Price List</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="relationships.html" class="waves-effect"><i class="ti-user"></i><span> Relationships</span></a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-layout-accordion-list"></i> <span>Sales Orders <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="orders.html">Orders</a></li>
+                                    <li><a href="invoices.html">Invoices</a></li>
+                                    <li><a href="shipments.html">Shipments</a></li>
+                                    <li><a href="returns.html">Returns</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-shopping-cart"></i> <span>Stock Control <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="purchase-orders.html">Purchase Orders</a></li>
+                                    <li><a href="stock-transfers.html">Stock Transfers</a></li>
+                                    <li><a href="stock-adjustments.html">Stock Adjustments</a></li>
+                                    <li><a href="stocktakes.html">Stocktakes</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-industry"></i> <span>Manufacturing <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Overview</a></li>
+                                    <li><a href="#">Production Orders</a></li>
+                                    <li><a href="#">Bills of Materials</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-shopping-cart-full"></i> <span>B2B eCommerce <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Dashboard</a></li>
+                                    <li><a href="#">Products</a></li>
+                                    <li><a href="#">Customers</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="waves-effect"><i class="ti-credit-card"></i><span> Payments</span></a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-bar-chart-alt"></i> <span>Intelligence <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Reporting </a></li>
+                                    <li><a href="#">Saved Reports</a></li>
+                                    <li><a href="#">Forecasting</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="page-title-box">
+                            <div class="row align-items-center">
+                                <div class="col-sm-6">
+                                    <h4 class="page-title">Purchase Order</h4>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="tb-right">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="x" placeholder="Search order #, company name or tags..." data-toggle="dropdown">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-dark" type="button"><span class="ion ion-md-search"></span></button>
+                                            </span>
+                                        </div>
+                                        <div class="dropdown mr-0"><a href="new-purchase-orders.html" class="btn btn-primary btn-cust dropdown-toggle arrow-none waves-effect waves-light">New Purchase Order</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                        
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="nav nav-tabs nav-tabs-custom" role="tablist">
+                                    <!-- <div class="selector"></div> -->
+                                    <li class="nav-item waves-effect waves-light">
+                                        <a class="nav-link show active" data-toggle="tab" href="#po-active" role="tab" aria-selected="true">
+                                            <span class="d-none d-sm-block">Active</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item waves-effect waves-light">
+                                        <a class="nav-link show" data-toggle="tab" href="#po-all" role="tab" aria-selected="false">
+                                            <span class="d-none d-sm-block">All</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content custab-content">
+                                    <div class="tab-pane show active" id="po-active" role="tabpanel">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover">
+                                                <thead class="thead-light">
+                                                    <tr>
+                                                        <th scope="col" class="text-center" style="width: 40px;">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" id="purchaseord1" name="purchaseord1" class="custom-control-input" data-parsley-multiple="proreciv1"> 
+                                                                <label class="custom-control-label" for="purchaseord1"></label>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col" class="text-center" style="width: 48px;"></th> <!--Icon-->
+                                                        <th scope="col">Order #</th>
+                                                        <th scope="col">Status</th>
+                                                        <th scope="col">Received</th>
+                                                        <th scope="col">Quantity</th>
+                                                        <th scope="col">Company Name</th>
+                                                        <th scope="col">Total Cost</th>
+                                                        <th scope="col">Due</th>
+                                                        <th scope="col">Last Updated</th>
+                                                        <th scope="col">Received At</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" id="purchaseord2" name="purchaseord2" class="custom-control-input" data-parsley-multiple="proreciv1"> 
+                                                                <label class="custom-control-label" for="purchaseord2"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td scope="row" class="text-center">
+                                                            <div><a href="view-purchase-orders.html"><img src="assets/images/hc/hc1.png" alt="" class="thumb-md" /></a></div>
+                                                        </td>
+                                                        <td><a href="view-purchase-orders.html">ANN2020</a></td>
+                                                        <td><span class="badge badge-success">Active</span></td>
+                                                        <td>
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" id="proreciv01" name="proreciv01" class="custom-control-input" data-parsley-multiple="proreciv1"> 
+                                                                <label class="custom-control-label" for="proreciv01"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>2</td>
+                                                        <td>Annanta Source LLC</td>
+                                                        <td>₹600.00</td>
+                                                        <td>May 27 2020</td>
+                                                        <td>May 11 2020</td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane show" id="po-all" role="tabpanel">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover">
+                                                <thead class="thead-light">
+                                                    <tr>
+                                                        <th scope="col" class="text-center" style="width: 40px;">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" id="purchaseord1" name="purchaseord1" class="custom-control-input" data-parsley-multiple="proreciv1"> 
+                                                                <label class="custom-control-label" for="purchaseord1"></label>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col" class="text-center" style="width: 48px;"></th> <!--Icon-->
+                                                        <th scope="col">Order #</th>
+                                                        <th scope="col">Status</th>
+                                                        <th scope="col">Received</th>
+                                                        <th scope="col">Quantity</th>
+                                                        <th scope="col">Company Name</th>
+                                                        <th scope="col">Total Cost</th>
+                                                        <th scope="col">Due</th>
+                                                        <th scope="col">Last Updated</th>
+                                                        <th scope="col">Received At</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" id="purchaseord2" name="purchaseord2" class="custom-control-input" data-parsley-multiple="proreciv1"> 
+                                                                <label class="custom-control-label" for="purchaseord2"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td scope="row" class="text-center">
+                                                            <div><a href="view-order.html"><img src="assets/images/hc/hc1.png" alt="" class="thumb-md" /></a></div>
+                                                        </td>
+                                                        <td><a href="view-purchase-orders.html">ANN2020</a></td>
+                                                        <td><span class="badge badge-success">Active</span></td>
+                                                        <td>
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" id="proreciv01" name="proreciv01" class="custom-control-input" data-parsley-multiple="proreciv1"> 
+                                                                <label class="custom-control-label" for="proreciv01"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>2</td>
+                                                        <td>Annanta Source LLC</td>
+                                                        <td>₹600.00</td>
+                                                        <td>May 27 2020</td>
+                                                        <td>May 11 2020</td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- container-fluid -->
+                </div>
+                <!-- content -->
+                <footer class="footer">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Handicraft Dashboard | GoExplore India.</footer>
+            </div>
+            <!-- ============================================================== --><!-- End Right content here --><!-- ============================================================== -->
+        </div>
+        <!-- END wrapper -->
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/waves.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>

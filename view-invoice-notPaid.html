@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, shrink-to-fit=no" />
+	    <meta name="author" content="Go Explore India : Dashboard" />
+	    <meta name="description" content="Go Explore India : Dashboard" />
+	    <meta name="copyright" content="Go Explore India : Dashboard" />
+	    <meta name="keywords" content="" />
+	    <meta name="robots" content="Go Explore India : Dashboard || Index" />
+	    <meta name="DC.title" content="Go Explore India : Dashboard" />
+	    <meta name="geo.placename" content="Dev Kumar , USA" />
+	    <meta name="geo.region" content="33067" />
+	    <meta name="geo.placename" content="825, 13th Cross Rd, Hebbal, Bovipalya, Nagapura, Bengaluru, Karnataka 560086 India" />
+	    <meta name="geo.region" content="560086" />
+	    <meta name="geo.placename" content="7110 W Cypresshead Dr Parkland, Florida 33067-2308 United States " />
+        <meta name="geo.region" content="33067" />
+
+
+	    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+	    <title>Dashboard - Al Shamil</title>
+
+        <!--Chartist Chart CSS -->
+        <!-- <link rel="stylesheet" href="../plugins/chartist/css/chartist.min.css"> -->
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet" />
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/icofont.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!-- Begin page -->
+        <div id="wrapper">
+            <!-- Top Bar Start -->
+            <div class="topbar">
+                <!-- LOGO -->
+                <div class="topbar-left">
+                	<a href="index.html" class="logo">
+                		<span>
+                			<img src="assets/images/logo_white.svg" alt="" height="24"/>
+                		</span>
+                		<i>
+                			<img src="assets/images/logo.svg" alt="" height="30" />
+                		</i>
+                	</a>
+                </div>
+
+                <nav class="navbar-custom">
+                    <ul class="navbar-right d-flex list-inline float-right mb-0">
+                        <!-- full screen -->
+                        <li class="dropdown notification-list d-none d-md-block"><a class="nav-link waves-effect" href="#" id="btn-fullscreen"><i class="mdi mdi-fullscreen noti-icon"></i></a></li>
+                        <!-- notification -->
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"><i class="mdi mdi-bell-outline noti-icon"></i> <span class="badge badge-pill badge-danger noti-icon-badge">3</span></a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+                                <h6 class="dropdown-item-text">Notifications (258)</h6>
+                                <div class="slimscroll notification-item-list">
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                        <div class="notify-icon bg-success"><i class="mdi mdi-cart-outline"></i></div>
+                                        <p class="notify-details">Your order is placed<span class="text-muted">Dummy text of the printing and typesetting industry.</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-warning"><i class="mdi mdi-message-text-outline"></i></div>
+                                        <p class="notify-details">New Message received<span class="text-muted">You have 87 unread messages</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-info"><i class="mdi mdi-glass-cocktail"></i></div>
+                                        <p class="notify-details">Your item is shipped<span class="text-muted">It is a long established fact that a reader will</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-primary"><i class="mdi mdi-cart-outline"></i></div>
+                                        <p class="notify-details">Your order is placed<span class="text-muted">Dummy text of the printing and typesetting industry.</span></p>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-danger"><i class="mdi mdi-message-text-outline"></i></div>
+                                        <p class="notify-details">New Message received<span class="text-muted">You have 87 unread messages</span></p>
+                                    </a>
+                                </div>
+                                <!-- All--> 
+                                <a href="javascript:void(0);" class="dropdown-item text-center text-primary">View all <i class="fi-arrow-right"></i></a>
+                            </div>
+                        </li>
+                        <!-- logoutg -->
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect" href="login.html"><i class="mdi mdi-power noti-icon"></i></a>
+                        </li>
+                        <!-- profile -->
+                        <li class="dropdown notification-list">
+                            <div class="nav-pro-img">
+                                <a class="nav-link arrow-none waves-effect nav-user" href="#" data-toggle="modal" data-target=".dtUserProfile"><img src="assets/images/users/user-9.jpg" alt="user" class="rounded-circle"></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list-inline menu-left mb-0">
+                        <li class="float-left"><button class="button-menu-mobile open-left waves-effect"><i class="mdi mdi-menu"></i></button></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--  Profile Section -->
+            <div class="modal fade dtUserProfile" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm modal-dialog-centered">
+                    <div class="modal-content" style="background-color: transparent;">
+                        <div class="modal-body p-0">
+                            <div class="wrapperPro">
+								<div class="top-icons">
+									<a href="#" data-dismiss="modal"><i class="fas fa-long-arrow-alt-left"></i></a>
+
+									<a href="login.html"><i class="far mdi mdi-power"></i></a>
+								</div>
+								
+								<div class="profile">
+									<img src="assets/images/users/user-9.jpg" class="thumbnail">
+									<h3 class="name">Beverly Little</h3>
+									<p class="title">HR Manager</p>
+									<!-- <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam aliquid porro!</p> -->
+									<ul class="list-group list-group-flush mb-3">
+	                            		<li class="list-group-item"><i class="ion ion-md-barcode"></i> <span>15487</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-md-phone-portrait"></i> <span>+971 50 587 0654</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-md-at"></i> <span>beverly@gmail.com</span></li>
+	                            		<li class="list-group-item"><i class="ion ion-ios-flag"></i> <span>Indian</span></li>
+	                            	</ul>
+									<a class="btn bg-animate" href="profile.html">Edit Profile</a>
+								</div>
+								
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu">
+                <div class="slimscroll-menu" id="remove-scroll">
+                    <div id="sidebar-menu">
+                        <ul class="metismenu" id="side-menu">
+                            <li><a href="index.html" class="waves-effect"><i class="ti-dashboard"></i><span>Dashboard</span></a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-package"></i> <span>Inventory <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="product.html">Product</a></li>
+                                    <li><a href="variants.html">Variants</a></li>
+                                    <li><a href="batches.html">Batches</a></li>
+                                    <li><a href="price-lists.html">Price List</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="relationships.html" class="waves-effect"><i class="ti-user"></i><span> Relationships</span></a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-layout-accordion-list"></i> <span>Sales Orders <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="orders.html">Orders</a></li>
+                                    <li><a href="invoices.html">Invoices</a></li>
+                                    <li><a href="shipments.html">Shipments</a></li>
+                                    <li><a href="returns.html">Returns</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-shopping-cart"></i> <span>Stock Control <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Purchase Orders</a></li>
+                                    <li><a href="#">Stock Transfers</a></li>
+                                    <li><a href="#">Stock Adjustments</a></li>
+                                    <li><a href="#">Stocktakes</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-industry"></i> <span>Manufacturing <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Overview</a></li>
+                                    <li><a href="#">Production Orders</a></li>
+                                    <li><a href="#">Bills of Materials</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-shopping-cart-full"></i> <span>B2B eCommerce <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Dashboard</a></li>
+                                    <li><a href="#">Products</a></li>
+                                    <li><a href="#">Customers</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="waves-effect"><i class="ti-credit-card"></i><span> Payments</span></a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-bar-chart-alt"></i> <span>Intelligence <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Reporting </a></li>
+                                    <li><a href="#">Saved Reports</a></li>
+                                    <li><a href="#">Forecasting</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="page-title-box">
+                            <div class="row align-items-center">
+                                <div class="col-sm-6">
+                                    <h4 class="page-title"><a href="orders.html">Orders</a> / <small>#ANN2020</small> / <a href="invoices.html">Invoices</a> / <small>#ANN2020</small></h4>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="tb-right">
+                                        <div class="dropdown"><a href="new-order.html" class="btn btn-outline-secondary dropdown-toggle arrow-none waves-effect waves-light">New Sales Order</a></div>
+                                        <div class="dropdown"><a href="invoices.html" class="btn btn-outline-secondary dropdown-toggle arrow-none waves-effect waves-light">Back</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="card card-order">
+                                    <div class="card-header">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="order-coname">
+                                                    <h5>Invoice #ANN2021</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 text-right">
+                                                <div class="btn-group" role="group" aria-label="">
+                                                    <a href="#" class="btn btn-outline-secondary waves-effect waves-light">Email</a>
+                                                    <a href="#" class="btn btn-outline-secondary waves-effect waves-light">Print</a>
+                                                    <div class="btn-group" role="group">
+                                                        <a id="preview" href="" class="btn btn-outline-secondary waves-effect waves-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                          Preview
+                                                        </a>
+                                                        <div class="dropdown-menu" aria-labelledby="preview">
+                                                            <a class="dropdown-item" href="#">Preview Sales Order</a>
+                                                            <a class="dropdown-item" href="#">Preview Order Pack List</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-group" role="group" aria-label="">
+                                                    <a href="#" class="btn btn-outline-secondary waves-effect waves-light">Edit</a>
+                                                    <a href="#" class="btn btn-outline-secondary waves-effect waves-light">Delete</a>
+                                                </div>
+                                                <a href="#" class="btn btn-outline-secondary waves-effect waves-light ml-2">Pay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body px-0">
+                                        <div class="row dl-horizontal">
+                                            <div class="col-md-4">
+                                                <dl class="c-dl">
+                                                    <dt>Bill To</dt>
+                                                    <dd>
+                                                        <span class="underlined"> Head Office </span> 
+                                                    </dd>
+                                                    <dt>Ship To</dt>
+                                                    <dd>
+                                                        <span class="underlined"> Head Office </span> 
+                                                    </dd>
+                                                    <dt>Ship From</dt>
+                                                    <dd>
+                                                        <span class="underlined"> Primary Location </span> 
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <dl class="c-dl">
+                                                    <dt>Issue Date</dt>
+                                                    <dd>
+                                                        <span class="underlined">May 3 2020</span>
+                                                    </dd>
+                                                    <dt>Payment Date</dt>
+                                                    <dd>
+                                                        <span class="underlined">Apr 28 2020</span>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-4">
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover table-bordered table-white">
+                                                        <thead class="thead-light">
+                                                            <tr>
+                                                                <th style="width: 40%;">Product</th>
+                                                                <th>Quantity</th>
+                                                                <th>Not Invoiced</th>
+                                                                <th>Total Qty</th>
+                                                                <th>Total (₹)</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="selitem">
+                                                                        <img src="assets/images/hc/hc1.png" alt="">
+                                                                        <div class="selitem__info">
+                                                                            <h6>Item Name <small>Light Gray / Medium</small></h6>
+                                                                            <p>Catagory - IN001-LG-M - Light Gray / Medium</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>4</td>
+                                                                <td>0</td>
+                                                                <td>4</td>
+                                                                <td>₹3,200.60</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="selitem">
+                                                                        <img src="assets/images/hc/hc2.png" alt="">
+                                                                        <div class="selitem__info">
+                                                                            <h6>Item Name <small>Light Gray / Medium</small></h6>
+                                                                            <p>Catagory - IN001-LG-M - Light Gray / Medium</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>4</td>
+                                                                <td>0</td>
+                                                                <td>4</td>
+                                                                <td>₹100.60</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="selitem">
+                                                                        <img src="assets/images/hc/hc3.png" alt="">
+                                                                        <div class="selitem__info">
+                                                                            <h6>Item Name <small>Light Gray / Medium</small></h6>
+                                                                            <p>Catagory - IN001-LG-M - Light Gray / Medium</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>2</td>
+                                                                <td>0</td>
+                                                                <td>4</td>
+                                                                <td>₹1,200.60</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-4">
+                                            <div class="col-md-7">
+                                                <p class="pl-3">Message to customer</p>
+                                            </div>
+                                            <div class="col-sm-4 offset-md-1">
+                                                <div class="table-responsive pr-3">
+                                                    <table class="table mb-0 totaltable">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>Total Units</th>
+                                                                <th class="text-right">10</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Subtotal</th>
+                                                                <th class="text-right">₹6,400.80</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Total</th>
+                                                                <th class="text-right text-primary"><h6>₹6,400.80</h6></th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <aside class="col-md-3">
+                                <div class="card card-aside-order">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="item-aside">
+                                        <div class="subheader">
+                                            <span class="finalized status right"> 
+                                                <div class="btn-group" role="group">
+                                                    <a id="preview" href="" class="btn btn-sm waves-effect waves-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        finalized
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="preview">
+                                                        <div class="dropdown-title"><i class="icofont-listing-box"></i> Workflow</div>
+                                                        <a class="dropdown-item" href="edit-order.html">Edit Order</a>
+                                                        <a class="dropdown-item" href="#">Void</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <div class="dropdown-title"><i class="far fa-copy fa-fw"></i> Documents</div>
+                                                        <a class="dropdown-item" href="#">Email</a>
+                                                        <a class="dropdown-item" href="#">Print</a>
+                                                        <a class="dropdown-item" href="#">Preview Sales Order</a>
+                                                        <a class="dropdown-item" href="#">Preview Order Pack List</a>
+                                                    </div>
+                                                </div>
+                                            </span> 
+                                            <a href="view-order.html" class="head-c">Order #ANN2020</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card card-aside-order">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <a href="invoices.html" class="item-aside">
+                                        <div class="subheader">
+                                            <span class="status right"> Invoiced
+                                            </span> Invoices
+                                        </div>
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <a href="#" class="item-link">
+                                                <i class="icofont-rounded-left"></i>
+                                                SO0001
+                                                <i class="icofont-check-circled float-right ml-2 mr-0"></i>
+                                                <span class="inset-number">
+                                                    4,500.00
+                                                </span>
+                                            </a>
+                                            <span class="finalized status right">
+                                                <div class="btn-group" role="group">
+                                                    <a id="preview" href=""
+                                                        class="btn btn-sm waves-effect waves-light dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="preview">
+                                                        <div class="dropdown-title"><i class="icofont-listing-box"></i> Workflow</div>
+                                                        <a class="dropdown-item" href="#">Pay</a>
+                                                        <a class="dropdown-item" href="edit-invoice.html">Edit</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <div class="dropdown-title"><i class="far fa-copy fa-fw"></i> Documents</div>
+                                                        <a class="dropdown-item" href="#">Email</a>
+                                                        <a class="dropdown-item" href="#">Print</a>
+                                                        <a class="dropdown-item" href="#">Preview</a>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card card-aside-order">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <a href="invoices.html" class="item-aside">
+                                        <div class="subheader">
+                                            <span class="status right text-danger"> ₹6400.80 to pay
+                                            </span> Payments
+                                        </div>
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <a href="#" class="item-link mt-2" style="width: 12%;">
+                                                <i class="icofont-info"></i>
+                                            </a>
+                                            <p class="mt-2">Make a partial or full payment for an invoice by clicking the Pay button on the invoice.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <a href="#" class="btn btn-block btn-primary waves-effect waves-light"><i class="fa fa-forward mrxs"></i> Pay All</a>
+                                    </div>
+                                </div>
+
+                                <div class="card card-aside-order">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <a href="#" class="item-aside">
+                                        <div class="subheader">
+                                            <span class="status right"> 10 to fulfil
+                                            </span> Shipments
+                                        </div>
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <a href="#" class="item-link">
+                                                <i class="icofont-file-alt"></i>
+                                                Shipment #1
+                                                <i class="icofont-check-circled float-right ml-2 mr-0"></i>
+                                                <span class="inset-number">
+                                                    10
+                                                </span>
+                                            </a>
+                                            <span class="finalized status right">
+                                                <div class="btn-group" role="group">
+                                                    <a id="preview" href=""
+                                                        class="btn btn-sm waves-effect waves-light dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="preview">
+                                                        <div class="dropdown-title"><i class="icofont-listing-box"></i> Workflow</div>
+                                                        <a class="dropdown-item" href="view-shipments-notPaid.html">Edit</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                        <a class="dropdown-item" href="#">Mark as Shipped</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <div class="dropdown-title"><i class="far fa-copy fa-fw"></i> Documents</div>
+                                                        <a class="dropdown-item" href="#">Email</a>
+                                                        <a class="dropdown-item" href="#">Print</a>
+                                                        <a class="dropdown-item" href="#">Preview Packing Slip</a>
+                                                        <a class="dropdown-item" href="#">Preview Shipping Label</a>
+                                                        <a class="dropdown-item" href="#">Preview Pick List</a>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <a href="#" class="btn btn-block btn-primary waves-effect waves-light"><i class="fa fa-forward mrxs"></i> Mark as Shipped</a>
+                                    </div>
+                                </div>
+
+                                <div class="card card-aside-order">
+                                    <div class="card-hrader his-card p-0 his-collapsed">
+                                        <a href="#" class="btn m-0 btn-block btn-cust btn-lg text-left waves-effect waves-light">
+                                            <i class="icofont-history"></i> Show History <span class="clickable float-right"><i class="icofont-rounded-down"></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="card-body his-body p-0">
+                                        <div class="order-history">
+                                            <div class="order-history__invoiceinfo">
+                                                <i class="icofont-list"></i>
+                                                <div class="his-cont">
+                                                    <h4>Sales Order Updated</h4>
+                                                    <p>Payment Status changed from unpaid to paid <span class="text-grey">by Dinesh</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="order-history__invoicenum">
+                                                <span>9:09am</span>
+                                            </div>
+                                        </div>
+                                        <div class="order-history">
+                                            <div class="order-history__invoiceinfo">
+                                                <i class="icofont-list"></i>
+                                                <div class="his-cont">
+                                                    <h4>Sales Order Updated</h4>
+                                                    <p>Payment Status changed from unpaid to paid <span class="text-grey">by Dinesh</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="order-history__invoicenum">
+                                                <span>9:09am</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- container-fluid -->
+                </div>
+                <!-- content -->
+                <footer class="footer">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Al Shamil Computer.</footer>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- END wrapper -->
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/waves.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
